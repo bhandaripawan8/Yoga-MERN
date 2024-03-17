@@ -6,6 +6,7 @@ import icons1 from '../assets/images/icon01.png'
 import AboutMe from '../components/Aboutme';
 import PricingPlans from '../components/Pricing';
 import Services from './Services';
+import Testimonials from '../components/Testimonials';
 
 const Home = () => {
   return (
@@ -72,6 +73,9 @@ const Home = () => {
         </div>
         <div className='p-10 mt-10'>
           <Services/>
+        </div>
+        <div>
+        <Testimonials/>
         </div>
         {/* <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]'>
             <div className='py-[30px] px-5'>
