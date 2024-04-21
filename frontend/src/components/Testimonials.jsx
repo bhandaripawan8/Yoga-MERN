@@ -1,6 +1,7 @@
-import React from 'react';
+import {React, useRef} from 'react';
+import { Link } from 'react-scroll';
 import testimonials1 from '../assets/images/testimonials1.png';
-import './Testimonials.css';
+import { Element } from 'react-scroll';
 
 const Testimonials = () => {
   const testimonialsData = [
@@ -23,7 +24,7 @@ const Testimonials = () => {
       "name": "Emma Williams",
       "occupation": "Yoga Instructor",
       "image": testimonials1,
-      "testimonial": "Learing yoga at this studio has been incredibly fulfilling. I love to discover the benefits of yoga, both physically and mentally. The community here is like family."
+      "testimonial": "Learning yoga at this studio has been incredibly fulfilling. I love to discover the benefits of yoga, both physically and mentally. The community here is like family."
     },
     {
       "id": 4,
@@ -41,27 +42,46 @@ const Testimonials = () => {
     }
   ];
 
+  const containerRef = useRef(null);
+
+  const handleScrollLeft = () => {
+    containerRef.current.scrollLeft -= 200; // Adjust the scroll distance as needed
+  };
+
+  const handleScrollRight = () => {
+    containerRef.current.scrollLeft += 200; // Adjust the scroll distance as needed
+  };
+
   return (
     <div className="container mx-auto">
       <h1 className="text-3xl font-bold text-center my-8">Customer Testimonials</h1>
-      <div className="testimonials-container overflow-x-auto">
-        <div className="testimonials flex flex-nowrap justify-center">
-          {testimonialsData.map((data) => (
-            <div key={data.id} className="testimonial-card m-4 p-5 max-w-xs border rounded-lg overflow-hidden shadow-lg">
-              <img src={data.image} alt={data.name} className="w-full h-auto rounded-xl" />
-              <div className="p-4">
-                <p className="text-gray-500 text-center mt-2 text-primaryColor">- {data.name}, {data.occupation}</p>
-                <p className="text-lg text-center text-[15px] text-black">{data.testimonial}</p>
+      <div className="relative">
+        <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
+          <button onClick={handleScrollLeft} className="bg-gray-200 hover:bg-gray-300 text-gray-600 font-bold py-2 px-4 rounded-l">
+            &lt;
+          </button>
+        </div>
+        <Element className="testimonials-container overflow-x-auto" id="testimonialsContainer" ref={containerRef}>
+          <div className="testimonials flex flex-nowrap justify-center">
+            {testimonialsData.map((data, index) => (
+              <div key={data.id} className={`testimonial-card m-2 sm:m-4 p-3 sm:p-5 max-w-xs sm:max-w-sm border rounded-lg overflow-hidden shadow-lg ${index > 2 ? 'hidden' : 'block'}`}>
+                <img src={data.image} alt={data.name} className="w-full h-auto rounded-md" />
+                <div className="p-2 sm:p-4">
+                  <p className="text-gray-500 text-center mt-2 text-primaryColor">- {data.name}, {data.occupation}</p>
+                  <p className="text-sm sm:text-base text-center text-black">{data.testimonial}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </Element>
+        <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
+          <button onClick={handleScrollRight} className="bg-gray-200 hover:bg-gray-300 text-gray-600 font-bold py-2 px-4 rounded-r">
+            &gt;
+          </button>
         </div>
       </div>
     </div>
   );
 };
-
-
-
 
 export default Testimonials;
