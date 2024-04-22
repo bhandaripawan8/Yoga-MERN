@@ -5,7 +5,7 @@ import Layout from './layout/Layout';
 
 
 const App = () => {
-  return <div className='text-[20px] text-blue-600 '>
+  return <div className='text-[20px] mx-[250px]'>
       <Layout/>
 </div>
 };
