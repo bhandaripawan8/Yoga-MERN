@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { BiMenu } from "react-icons/bi";
+import './Header.css'
 
 const navlinks = [
   {
@@ -23,17 +23,18 @@ const navlinks = [
 
 const Header = () => {
   return (
-    <header className="mx-[50px]">
-      <div className="flex items-center justify-between mt-[20px]">
+    <header className="mx-[5px] mt-[30px]">
+      <div className="flex items-center justify-between">
         {/* Logo on the far left with left margin 100 */}
-        <div className="flex items-center ml-100">
+        <div className="flex items-center">
           <Link to={"/"}>
-            <h2 className="text-black">Logo</h2>
+            <h2 className="text-black navTexts">Logo</h2>
           </Link>
         </div>
 
         {/* Navigation in the middle */}
-        <div className="container flex items-center justify-between">
+        <div>
+        <div className="container flex items-center justify-between ">
           <nav className="navigation">
             <ul className="menu flex items-center gap-[2.7rem]">
               {navlinks.map((link, index) => (
@@ -41,7 +42,7 @@ const Header = () => {
                   <NavLink
                     to={link.path}
                     activeClassName="text-primaryColor text-[16px] leading-7 font-[600]"
-                    className="text-textColor text-[16px] leading-7 font-[500] hover:text-primaryColor"
+                    className="text-textColor text-[16px] leading-7 font-[500] navTexts"
                   >
                     {link.display}
                   </NavLink>
@@ -49,16 +50,12 @@ const Header = () => {
               ))}
             </ul>
           </nav>
-          <span className="md:hidden">
-            <BiMenu className="w-6 h-6 cursor-pointer" />
-          </span>
         </div>
-
-        {/* Login button on the far right with right margin 100 */}
-        <div className="flex items-center mr-100">
+        </div>
+        <div className="flex items-center">
           <Link to={"/login"}>
-            <button className="text-black py-2 px-6 text-white font-[600] h-8 w-25 flex items-center rounded-[40px]">
-              Login
+            <button className="text-blacktext-black font-[600] h-8 w-25 flex items-center navTexts">
+              Login/Register
             </button>
           </Link>
         </div>
