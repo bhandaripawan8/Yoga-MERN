@@ -5,7 +5,7 @@ import Layout from './layout/Layout';
 
 
 const App = () => {
-  return <div className='text-[20px] mx-[200px]'>
+  return <div className='text-[22px] px-[150px] bg-gradient-to-r from-blue-200 to-purple-200'>
       <Layout/>
 </div>
 };

@@ -1,7 +1,6 @@
 import React from 'react'
-import Home from '../Pages/Home'
-import Contacts from '../Pages/Contact'
-import Services from '../Pages/Services'
+import Home from '../components/Home/Home'
+import Contacts from '../components/Contact/Contact'
 import Login from '../Pages/Login'
 import Signup from '../Pages/Signup'
 import Sessions from '../Pages/Sessions/Sessions'
@@ -14,7 +13,6 @@ const Routers = () => {
     <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/contacts' element={<Contacts/>}/>
-        <Route path='/services' element={<Services/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/sessions/' element={<Sessions/>}/>

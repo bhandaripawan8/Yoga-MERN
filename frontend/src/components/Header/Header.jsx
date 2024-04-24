@@ -23,16 +23,13 @@ const navlinks = [
 
 const Header = () => {
   return (
-    <header className="mx-[5px] mt-[30px]">
+    <header className="mx-[5px] pt-[30px]">
       <div className="flex items-center justify-between">
-        {/* Logo on the far left with left margin 100 */}
         <div className="flex items-center">
           <Link to={"/"}>
             <h2 className="text-black navTexts">Logo</h2>
           </Link>
         </div>
-
-        {/* Navigation in the middle */}
         <div>
         <div className="container flex items-center justify-between ">
           <nav className="navigation">

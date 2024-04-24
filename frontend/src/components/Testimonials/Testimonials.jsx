@@ -1,5 +1,5 @@
 import {React, useRef} from 'react';
-import testimonials1 from '../assets/images/testimonials1.png';
+import testimonials1 from '../../assets/images/testimonials1.png';
 
 
 const Testimonials = () => {

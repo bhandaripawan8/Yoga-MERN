@@ -1,19 +1,12 @@
 import React from "react";
-import hero1 from "../assets/images/hero1.png";
-import hero2 from "../assets/images/hero2.png";
-import hero3 from "../assets/images/hero3.png";
-import icons1 from "../assets/images/icon01.png";
-import AboutMe from "../components/Aboutme";
-import PricingPlans from "../components/Pricing";
-import Services from "./Services";
-import Testimonials from "../components/Testimonials";
-import Contact from "../components/Contact";
-import "./Home.css";
+import hero1 from "../../assets/images/hero1.png";
+import hero2 from "../../assets/images/hero2.png";
+import hero3 from "../../assets/images/hero3.png";
 import { motion } from "framer-motion";
 
-const Home = () => {
+const Hero = () => {
   return (
-    <>
+    <div>
       <section className="hero__section pt-[80px] 2xl:h-[700px]">
         <div className="container flex justify-between gap-4">
           <div className="flex flex-col lg:flex-row gap-[120px] items-center justify-between">
@@ -38,7 +31,7 @@ const Home = () => {
               </motion.p>
               <div className="hover:bg-grey-500">
                 <motion.button
-                  className=" bg-purpleColor text-white rounded-full my-[20px] p-[10px] hover:bg-grey-200"
+                  className=" bg-headingColor text-white rounded-full my-[20px] p-[10px] hover:bg-grey-200"
                   initial={{ x: "70px" }}
                   animate={{ x: 0 }}
                   transition={{ duration: 2, ease: "easeInOut" }}
@@ -58,7 +51,7 @@ const Home = () => {
                   >
                     3+
                   </motion.h2>
-                  <span className="w-[100px] h-2 bg-yellowColor rounded-full block mt-[-14px]"></span>
+                  <span className="w-[100px] h-2 bg-headingColor rounded-full block mt-[-12px]"></span>
                   <motion.p className="text-lg">Year of Experience</motion.p>
                 </div>
                 {/* Clients */}
@@ -71,7 +64,7 @@ const Home = () => {
                   >
                     20+
                   </motion.h2>
-                  <span className="w-[100px] h-2 bg-yellowColor rounded-full block mt-[-14px]"></span>
+                  <span className="w-[100px] h-2 bg-headingColor rounded-full block mt-[-12px]"></span>
                   <p className="text-lg">Clients</p>
                 </div>
                 {/* Client Satisfaction */}
@@ -84,7 +77,7 @@ const Home = () => {
                   >
                     100%
                   </motion.h2>
-                  <span className="w-[100px] h-2 bg-purpleColor rounded-full block mt-[-14px]"></span>
+                  <span className="w-[100px] h-2 bg-headingColor rounded-full block mt-[-12px]"></span>
                   <p className="text-lg">Client Satisfaction</p>
                 </div>
               </div>
@@ -96,17 +89,18 @@ const Home = () => {
                 <motion.img
                   src={hero1}
                   alt=""
-                  className="w-full h-full object-cover"
+                  className=" h-full object-cover"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 1, ease: "easeInOut" }}/>
+                  transition={{ duration: 1, ease: "easeInOut" }}
+                />
               </div>
               {/* Second and third images */}
               <div className="flex flex-col gap-4">
                 <motion.img
                   src={hero2}
                   alt=""
-                  className="w-full h-60 object-cover"
+                  className="h-60 object-cover"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
@@ -114,7 +108,7 @@ const Home = () => {
                 <motion.img
                   src={hero3}
                   alt=""
-                  className="w-full h-60 object-cover"
+                  className=" h-60 object-cover"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
@@ -124,29 +118,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* how it works */}
-      <section>
-        <div className="container">
-          <div className="mt-20">
-            <AboutMe />
-          </div>
-          <div className="mt-20">
-            <PricingPlans />
-          </div>
-          <div className="p-10 mt-10">
-            <Services />
-          </div>
-          <div>
-            <Testimonials />
-          </div>
-          <div>
-            <Contact />
-          </div>
-        </div>
-      </section>
-    </>
+    </div>
   );
 };
 
-export default Home;
+export default Hero;
