@@ -1,9 +1,9 @@
 import React from "react";
-import AboutMe1 from "../../../assets/images/aboutme1.png";
+import AboutMe1 from "../../assets/images/aboutme1.png";
 
 const AboutMe = () => {
   return (
-    <section className="py-12 px-4 lg:px-0 bg-gray-100">
+    <section className="py-12 px-4 lg:px-0">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center text-black mb-8 lg:text-4xl">
           About Me

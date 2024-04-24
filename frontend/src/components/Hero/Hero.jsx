@@ -32,9 +32,10 @@ const Hero = () => {
               <div className="hover:bg-grey-500">
                 <motion.button
                   className=" bg-headingColor text-white rounded-full my-[20px] p-[10px] hover:bg-grey-200"
-                  initial={{ x: "70px" }}
+                  initial={{ x: "-70px" }}
                   animate={{ x: 0 }}
-                  transition={{ duration: 2, ease: "easeInOut" }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                  whileHover={{scale: 1.1}}
                 >
                   Request an Appointment
                 </motion.button>
@@ -47,7 +48,8 @@ const Hero = () => {
                     className="text-[35px] leading-[56px] lg:text-[35px] lg:leading-[54px] font-[700] text-headingColor"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 1, ease: "easeInOut" }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    whileHover={{scale: 1.1}}
                   >
                     3+
                   </motion.h2>
@@ -60,7 +62,8 @@ const Hero = () => {
                     className="text-[35px] leading-[56px] lg:text-[35px] lg:leading-[54px] font-[700] text-headingColor"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 1, ease: "easeIn" }}
+                    transition={{ duration: 0.5, ease: "easeIn" }}
+                    whileHover={{scale: 1.1}}
                   >
                     20+
                   </motion.h2>
@@ -73,7 +76,8 @@ const Hero = () => {
                     className="text-[35px] leading-[56px] lg:text-[35px] lg:leading-[54px] font-[700] text-headingColor"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 1, ease: "easeInOut" }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    whileHover={{scale: 1.1}}
                   >
                     100%
                   </motion.h2>
@@ -92,7 +96,8 @@ const Hero = () => {
                   className=" h-full object-cover"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 1, ease: "easeInOut" }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                  whileHover={{scale: 1.1}}
                 />
               </div>
               {/* Second and third images */}
@@ -103,7 +108,8 @@ const Hero = () => {
                   className="h-60 object-cover"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 1, ease: "easeInOut" }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                  whileHover={{scale: 1.1}}
                 />
                 <motion.img
                   src={hero3}
@@ -111,7 +117,8 @@ const Hero = () => {
                   className=" h-60 object-cover"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 1, ease: "easeInOut" }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                  whileHover={{scale: 1.1}}
                 />
               </div>
             </div>

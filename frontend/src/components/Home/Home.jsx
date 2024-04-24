@@ -1,9 +1,10 @@
 import React from "react";
-import AboutMe from "../whyChoose/AboutMe.jsx/Aboutme";
+import AboutMe from "../AboutMe/Aboutme";
 import PricingPlans from "../Pricing";
 import Testimonials from "../Testimonials/Testimonials";
 import Contact from "../Contact/Contact";
 import Hero from "../Hero/Hero";
+import WhyChoose from '../whyChoose/WhyChoose'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <>
         <div>
           <Hero />
+          <WhyChoose/>
         </div>
         <div className="container">
           <div className="mt-20">
