@@ -1,6 +1,6 @@
 import React from "react";
 import AboutMe from "../AboutMe/Aboutme";
-import PricingPlans from "../Pricing";
+import Itinerary from "../Itinerary/Itinerary";
 import Testimonials from "../Testimonials/Testimonials";
 import Contact from "../Contact/Contact";
 import Hero from "../Hero/Hero";
@@ -10,16 +10,17 @@ const Home = () => {
   return (
     <>
       <>
-        <div>
+        <div className="mt-[15px]">
           <Hero />
-          <WhyChoose/>
+
         </div>
         <div className="container">
-          <div className="mt-20">
+          <div className="mt-8">
             <AboutMe />
+            <WhyChoose/>
           </div>
           <div className="mt-20">
-            <PricingPlans />
+            <Itinerary />
           </div>
           <div>
             <Testimonials />

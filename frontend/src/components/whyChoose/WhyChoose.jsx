@@ -25,25 +25,42 @@ const WhyChoose = () => {
 
 
   return (
-    <div style={{height: '50vh'}}>
+    <div className='mt-[50px]'>
       <section ref={ref}>
-        <motion.p className='text-2xl my-[10px]'
+        <motion.p className='text-xl my-[10px] flex mx-auto text-center '
           initial={{opacity: 0, y: 50}}
           animate= {controls}
           transition={{duration: 0.5}}
         >Why choose Prayogi?</motion.p>
-        <p>
-          Expert Instructors: Our experienced yoga
+
+        <ul className='py-[10px]' ref={ref}>
+        <motion.li className='text-lg py-[5px]
+        '
+        initial={{opacity: 0, y: 20}}
+        animate={controls}
+        transition={{duration: 0.5, delay: 0.2}}
+        >
+          <p className='font-bold'>Expert Instructors:</p>Our experienced yoga
           teachers are dedicated to guiding you on your yoga journey, ensuring a
-          safe and enriching experience. </p>
-          <p>Sustainable Practices: We are committed
+          safe and enriching experience. </motion.li>
+          <motion.li className='text-lg py-[5px]'
+                  initial={{opacity: 0, y: 20}}
+                  animate={controls}
+                  transition={{duration: 0.5, delay: 0.3}}
+          ><p className='font-bold'>Sustainable Practices:</p> We are committed
           to eco-friendly practices, supporting local communities, and
-          preserving the natural beauty of our retreat locations. </p>
-          <p>
-          Personalized Experience: Whether you're a beginner or an experienced yogi, our
+          preserving the natural beauty of our retreat locations. </motion.li>
+          <motion.li className='text-lg py-[5px]'
+                  initial={{opacity: 0, y: 20}}
+                  animate={controls}
+                  transition={{duration: 0.5, delay: 0.4}}
+          ><p className='font-bold'>Personalized Experience:</p>
+           Whether you're a beginner or an experienced yogi, our
           retreats are designed to cater to all levels, ensuring a personalized
           and enriching experience for everyone.
-            </p>
+            </motion.li>
+        </ul>
+
       </section>
     </div>
   )
