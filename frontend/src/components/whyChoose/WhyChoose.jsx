@@ -1,6 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react'
 import {motion, useAnimation} from 'framer-motion'
-
+import yogaSVG from '../../assets/images/yoga.svg'
 
 const WhyChoose = () => {
 
@@ -25,7 +25,7 @@ const WhyChoose = () => {
 
 
   return (
-    <div className='mt-[50px]'>
+    <div className='mt-[50px] flex'>
       <section ref={ref}>
         <motion.p className='text-xl my-[10px] flex mx-auto text-center '
           initial={{opacity: 0, y: 50}}
@@ -62,6 +62,9 @@ const WhyChoose = () => {
         </ul>
 
       </section>
+      <div className='h-auto w-[100px]'>
+        <img src={yogaSVG} alt="yoga.svg" />
+      </div>
     </div>
   )
 }
