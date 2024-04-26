@@ -1,5 +1,5 @@
 
-import AboutMe1 from "../../assets/images/aboutme1.png";
+import AboutMe1 from "../../assets/images/Vector (2).png";
 import React, {useState, useRef, useEffect} from 'react'
 import {motion, useAnimation} from 'framer-motion'
 

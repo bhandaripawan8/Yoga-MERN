@@ -17,7 +17,9 @@ const Home = () => {
         <div className="container">
           <div className="mt-8">
             <AboutMe />
-            <WhyChoose/>
+          </div>
+          <div>
+          <WhyChoose/>
           </div>
           <div className="mt-20">
             <Itinerary />
