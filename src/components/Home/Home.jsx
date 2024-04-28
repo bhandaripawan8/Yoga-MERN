@@ -18,16 +18,16 @@ const Home = () => {
           <div className="mt-8">
             <AboutMe />
           </div>
-          <div>
+          <div className="mt-40">
           <WhyChoose/>
           </div>
-          <div className="mt-20">
+          <div className="mt-40">
             <Itinerary />
           </div>
-          <div>
+          <div className="mt-40">
             <Testimonials />
           </div>
-          <div>
+          <div className="mt-40">
             <Contact />
           </div>
         </div>

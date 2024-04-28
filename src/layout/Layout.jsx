@@ -6,11 +6,13 @@ import Routers from '../Routes/Routers'
 const Layout = () => {
   return (
     <>
-      <Header/>
+    <Header/>
         <main>
           <Routers/>
         </main>
+        <div className='mt-40'>
       <Footer/>
+        </div>
     </>
   )
 }
