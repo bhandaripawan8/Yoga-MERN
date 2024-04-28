@@ -31,7 +31,7 @@ const AboutMe = () => {
         >
           About Me
         </h2>
-        <div className="grid grid-cols-4 gap-4 ">
+        <div className="grid grid-cols-4 gap-5">
           {/* Left column for image */}
           <div className="col-span-1 flex justify-center items-center object-cover">
             <motion.img
