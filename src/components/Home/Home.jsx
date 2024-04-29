@@ -1,10 +1,11 @@
 import React from "react";
 import AboutMe from "../AboutMe/Aboutme";
 import Itinerary from "../Itinerary/Itinerary";
-import Testimonials from "../Testimonials/Testimonials";
 import Contact from "../Contact/Contact";
 import Hero from "../Hero/Hero";
 import WhyChoose from '../whyChoose/WhyChoose'
+import Sessions from "../Sessions/Sessions";
+import WhatToExpect from "../WhatToExpect/WhatToExpect";
 
 const Home = () => {
   return (
@@ -21,11 +22,14 @@ const Home = () => {
           <div className="mt-40">
           <WhyChoose/>
           </div>
-          <div className="mt-40">
+          {/* <div className="mt-40">
             <Itinerary />
+          </div> */}
+          <div className="mt-40">
+            <Sessions />
           </div>
           <div className="mt-40">
-            <Testimonials />
+            <WhatToExpect/>
           </div>
           <div className="mt-40">
             <Contact />

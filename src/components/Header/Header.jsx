@@ -52,7 +52,7 @@ const Header = () => {
         </div>
         <div className="flex items-center">
           <Link to={"/login"}>
-            <button className="text-blacktext-black font-[600] h-8 w-25 flex items-center navTexts">
+            <button className="text-blacktext-black font-[600] h-8 w-25 flex items-center">
               Login/Register
             </button>
           </Link>
