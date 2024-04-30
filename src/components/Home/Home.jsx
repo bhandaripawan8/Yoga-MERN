@@ -1,6 +1,5 @@
 import React from "react";
 import AboutMe from "../AboutMe/Aboutme";
-import Itinerary from "../Itinerary/Itinerary";
 import Contact from "../Contact/Contact";
 import Hero from "../Hero/Hero";
 import WhyChoose from '../whyChoose/WhyChoose'
@@ -16,21 +15,24 @@ const Home = () => {
 
         </div>
         <div className="container">
-          <div className="mt-8">
+        <div className="mt-8">
             <AboutMe />
           </div>
-          <div className="mt-40">
+        <div className="mt-40">
           <WhyChoose/>
           </div>
+          <div className="mt-40">
+            <WhatToExpect/>
+          </div>
+
+
           {/* <div className="mt-40">
             <Itinerary />
           </div> */}
           <div className="mt-40">
             <Sessions />
           </div>
-          <div className="mt-40">
-            <WhatToExpect/>
-          </div>
+
           <div className="mt-40">
             <Contact />
           </div>
