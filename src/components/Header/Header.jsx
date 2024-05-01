@@ -24,9 +24,9 @@ const navlinks = [
 
 const Header = () => {
   return (
-    <header className="mx-[5px] pt-[30px]">
+    <header className=" pt-[30px]">
       <div className="flex items-center justify-between">
-        <div className="flex items-center">
+        <div className="flex items-center ml-[20px]">
           <Link to={"/"}>
             <h2 className="text-black navTexts">Logo</h2>
           </Link>
@@ -52,7 +52,7 @@ const Header = () => {
         </div>
         <div className="flex items-center">
           <Link to={"/login"}>
-            <button className="text-blacktext-black font-[600] h-8 w-25 flex items-center">
+            <button className="text-blacktext-black font-[600] h-8 w-25 flex items-center mr-[20px]">
               Login/Register
             </button>
           </Link>

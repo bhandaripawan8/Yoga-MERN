@@ -6,14 +6,11 @@ import Layout from './layout/Layout';
 
 const App = () => {
 
-
+// bg-gradient-to-r from-blue-500 to-green-500
   return (
-  <div className='bg-gradient-to-r from-blue-500 to-green-500'>
-  
-  <div className='text-[22px] px-[150px]'>
+  <div className=''>
       <Layout/>
 </div>
-  </div>
   )
 };
 
