@@ -11,7 +11,7 @@ const HeroContent = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          Let's collaborate to grow the peace of mind
+          Let's collaborate to grow the <span className="text-teal-400">peace of mind</span>
         </motion.h1>
         <motion.p
           className="heroHeader mt-[10px] text-lg"
