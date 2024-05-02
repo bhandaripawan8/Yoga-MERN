@@ -1,66 +1,54 @@
-import React from "react";
-
-const SessionsContent = [
-     {
-        header: 'Outdoor Yoga Sessions',
-        content: `Step out of the studio and into nature with our exhilarating outdoor
-        yoga sessions. Leave the confines of four walls behind and immerse
-        yourself in the calming presence of the natural world. Our experienced
-        instructors will guide you through energizing asanas, pranayama
-        breathing exercises, and serene meditation practices, all while
-        surrounded by the scenic beauty of ............. Whether it's a lush
-        park or a picturesque mountaintop, practicing yoga outdoors enhances
-        your mind-body connection and allows you to experience a sense of true
-        harmony.`
-    },
-    {
-        header: 'Hike and Yoga',
-        content: `Combine your love for hiking and yoga with our unique hike and yoga sessions. Experience the joy of connecting with the natural world as you embark on a guided hike that takes you to breathtaking scenic viewpoints. Once we reach our destination, immerse yourself in a rewarding yoga session amidst the sights and sounds of nature. This fusion of hiking and yoga offers a truly remarkable experience that invigorates both the body and the soul.`
-    },
-    {
-        header: 'Prakriti sanga Yoga in Tarebhir',
-        content: `Join us for an unforgettable experience that combines the serenity
-        of yoga with the exhilaration of hiking in the breathtaking
-        landscapes of Tarebhir. Our Prakriti sanga Yoga offers a unique
-        opportunity to reconnect with yourself and nature, fostering a
-        deeper sense of well-being and harmony.`,
-        date: `Date: June 2024 Location: Tarebhir, Nepal`
-    }
-]
+import React from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { yogaEvent } from '../../data'; 
 
 const Sessions = () => {
+  const controls = useAnimation();
+
   return (
-    <div className="grid grid-cols-1 justify-items-center gap-4 bg-white">
-      <h3 className="">
-        Are you looking to deepen your yoga practice wihile connecting with
-        nature?
-      </h3>
-      <p className=" text-base">
-        Look no further! At The Prayogi, we offer invigorating outdoor yoga
-        sessions and transformative yoga retreats that combine the power of yoga
-        with the beauty of the great outdoors.
+    
+    <div>
+    <p className='text-xl my-[10px] flex mx-auto text-center'>
+      {yogaEvent.description}
+    </p>
+
+    <section>
+      <p className='text-xl my-[10px] flex mx-auto text-center'>
+        Outdoor Yoga Sessions
       </p>
-      <div className="mt-[20px]">
-        <h2>Our offers</h2>
-        <p>Event Highlights: </p>
-          <li>
-            Morning Yoga Sessions: Start your day with invigorating yoga
-            sessions amidst the tranquility of nature. Led by experienced
-            instructors, these sessions are designed to rejuvenate your body and
-            mind.
-          </li>
-          <li>
-            Guided Hikes: Explore the scenic beauty of Tarebhir with our guided
-            hikes. Traverse through lush forests, and picturesque trails,
-            experiencing the wonders of nature up close.
-          </li>
-          <li>
-            Mindfulness Activities: Immerse yourself in mindfulness activities
-            that promote relaxation and inner peace. Connect with nature through
-            guided meditation and breathing exercises.
-          </li>
-      </div>
-    </div>
+      <p className='text-lg py-[5px]'>{yogaEvent.outdoorYogaSessions.description}</p>
+    </section>
+
+    <section>
+      <p className='text-xl my-[10px] flex mx-auto text-center'>
+        Hike and Yoga
+      </p>
+      <p className='text-lg py-[5px]'>{yogaEvent.hikeAndYoga.description}</p>
+    </section>
+
+    <section>
+      <p className='text-xl my-[10px] flex mx-auto text-center'>
+        {yogaEvent.aboutEvent.title}
+      </p>
+      <p className='text-lg py-[5px]'>{yogaEvent.aboutEvent.description}</p>
+      <p className='py-[5px]'>Date: {yogaEvent.aboutEvent.date}</p>
+      <p className='py-[5px]'>Location: {yogaEvent.aboutEvent.location}</p>
+
+      <h3 className='py-[5px]'>Event Highlights</h3>
+      <ul>
+        {yogaEvent.aboutEvent.eventHighlights.map((highlight, index) => (
+          <li key={index} className='text-lg py-[5px]'>{highlight}</li>
+        ))}
+      </ul>
+
+      <h3 className='py-[5px]'>What to Expect</h3>
+      <ul>
+        {yogaEvent.aboutEvent.whatToExpect.map((expectation, index) => (
+          <li key={index} className='text-lg py-[5px]'>{expectation}</li>
+        ))}
+      </ul>
+    </section>
+  </div>
   );
 };
 
