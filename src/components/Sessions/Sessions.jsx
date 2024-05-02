@@ -1,9 +1,7 @@
 import React from 'react';
-import { motion, useAnimation } from 'framer-motion';
 import { yogaEvent } from '../../data'; 
 
 const Sessions = () => {
-  const controls = useAnimation();
 
   return (
     

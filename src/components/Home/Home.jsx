@@ -5,6 +5,7 @@ import Hero from "../Hero/Hero";
 import WhyChoose from "../whyChoose/WhyChoose";
 import Sessions from "../Sessions/Sessions";
 import WhatToExpect from "../WhatToExpect/WhatToExpect";
+import Faq from "../FAQ/Faq";
 
 const Home = () => {
   return (
@@ -29,6 +30,9 @@ const Home = () => {
           </div> */}
         <div className="mt-40">
           <Sessions />
+        </div>
+        <div className="mt-40">
+          <Faq/>
         </div>
 
         <div className="mt-40">
