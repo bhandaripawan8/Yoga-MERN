@@ -1,50 +1,58 @@
-import React from 'react';
-import { yogaEvent } from '../../data'; 
-import AreYou from './AreYou';
-
+import React from "react";
+import { yogaEvent } from "../../data";
+import AreYou from "./AreYou";
+import { Link } from "react-router-dom";
+import sessions1 from "../../assets/images/sessions1.png";
+import sessions2 from "../../assets/images/sessions2.png";
+import sessions3 from "../../assets/images/sessions3.png";
 
 const Sessions = () => {
-
   return (
-    <div>
-      <AreYou/>
-    <section>
-      <p className='text-xl my-[10px] flex mx-auto text-center'>
-        Outdoor Yoga Sessions
-      </p>
-      <p className='text-lg py-[5px]'>{yogaEvent.outdoorYogaSessions.description}</p>
-    </section>
-
-    <section>
-      <p className='text-xl my-[10px] flex mx-auto text-center'>
-        Hike and Yoga
-      </p>
-      <p className='text-lg py-[5px]'>{yogaEvent.hikeAndYoga.description}</p>
-    </section>
-
-    <section>
-      <p className='text-xl my-[10px] flex mx-auto text-center'>
-        {yogaEvent.aboutEvent.title}
-      </p>
-      <p className='text-lg py-[5px]'>{yogaEvent.aboutEvent.description}</p>
-      <p className='py-[5px]'>Date: {yogaEvent.aboutEvent.date}</p>
-      <p className='py-[5px]'>Location: {yogaEvent.aboutEvent.location}</p>
-
-      <h3 className='py-[5px]'>Event Highlights</h3>
-      <ul>
-        {yogaEvent.aboutEvent.eventHighlights.map((highlight, index) => (
-          <li key={index} className='text-lg py-[5px]'>{highlight}</li>
-        ))}
-      </ul>
-
-      <h3 className='py-[5px]'>What to Expect</h3>
-      <ul>
-        {yogaEvent.aboutEvent.whatToExpect.map((expectation, index) => (
-          <li key={index} className='text-lg py-[5px]'>{expectation}</li>
-        ))}
-      </ul>
-    </section>
-  </div>
+    <>
+      <div className="my-[20px]">
+        <AreYou />
+      </div>
+      <div className="flex justify-center my-[20px]">
+        <div className="h-auto items-center flex gap-2">
+          <div className=" flex-grow bg-red-100 flex md:flex-row h-auto items-center gap-5 p-5 md:p-0">
+            <div className="bg-red-300 flex flex-col justify-center items-center gap-3 md:p-0 w-full md:w-auto">
+              <div className="w-[80%] border p-4 mb-4">
+                <img src={sessions1} alt="" className="w-10 h-10 mx-auto mb-2" />
+                <p className="text-lg font-bold text-center mb-2">
+                  Outdoor Yoga Sessions
+                </p>
+                <p className="text-base text-center">
+                  {yogaEvent.outdoorYogaSessions.description}
+                </p>
+              </div>
+              <div className="w-[80%] border p-4 mb-4">
+                <img src={sessions2} alt="" className="w-10 h-10 mx-auto mb-2" />
+                <p className="text-lg font-bold text-center mb-2">Hike and Yoga</p>
+                <p className="text-base text-center">
+                  {yogaEvent.hikeAndYoga.description}
+                </p>
+              </div>
+              <div className="w-[80%] border p-4">
+                <img src={sessions3} alt="" className="w-10 h-10 mx-auto mb-2" />
+                <p className="text-lg font-bold text-center mb-2">
+                  Prakriti sanga yoga in Tarevir
+                </p>
+                <p className="text-base text-center">
+                  {yogaEvent.aboutEvent.description}
+                </p>
+                <div className="flex items-center justify-center mt-[15px]">
+                  <Link to={"/tarevir"}>
+                    <button className="w-[100px] bg-buttonBackground text-black rounded-lg text-textParagraph p-[8px] hover:bg-black hover:text-white">
+                      More Details
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

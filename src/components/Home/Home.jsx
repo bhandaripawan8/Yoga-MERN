@@ -10,31 +10,13 @@ import Faq from "../FAQ/Faq";
 const Home = () => {
   return (
     <>
-      <>
-        <div className="">
-          <Hero />
-        </div>
-
-        <div className="mt-8">
-          <AboutMe />
-        </div>
-        <div className="mt-40">
-          <WhyChoose />
-        </div>
-        <div className="mt-40">
-          <WhatToExpectData/>
-        </div>
-        <div className="mt-40">
-          <Sessions />
-        </div>
-        <div className="mt-40">
-          <Faq/>
-        </div>
-
-        <div className="mt-40">
-          <Contact />
-        </div>
-      </>
+      <Hero />
+      <Sessions />
+      <AboutMe />
+      <WhyChoose />
+      <WhatToExpectData />
+      <Faq />
+      <Contact />
     </>
   );
 };

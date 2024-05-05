@@ -25,7 +25,7 @@ const HeroContent = () => {
         </motion.p>
         <div className="hover:bg-grey-500">
           <motion.button
-            className=" bg-headingColor text-white rounded-full my-[20px] p-[10px] hover:bg-grey-200"
+            className=" bg-buttonBackground text-black rounded-md my-[20px] p-[10px] hover:bg-grey-200"
             initial={{ x: "-70px" }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}

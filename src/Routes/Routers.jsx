@@ -6,6 +6,7 @@ import Signup from '../Pages/Signup'
 import Sessions from '../Pages/Sessions/Sessions'
 import SessionsDetails from '../Pages/Sessions/SessionsDetails'
 import {Routes, Route} from 'react-router-dom';
+import Tarevir from '../components/Sessions/Tarevir'
 
 
 const Routers = () => {
@@ -17,6 +18,7 @@ const Routers = () => {
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/sessions/' element={<Sessions/>}/>
         <Route path='/sessionsdetails' element={<SessionsDetails/>}/>
+        <Route path='/tarevir' element= {<Tarevir/>}/>
     </Routes>
   )
 }

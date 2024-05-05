@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+// tailwind.config.js
+
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -7,18 +8,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primaryColor: "#0067ff",
-        yellowColor: "#feb60d",
-        purpleColor: "#9771ff",
-        irisBlueColor: "#01b5cs",
-        headingColor: "#181A1E",
-        textColor: "#FF6276",
+        textColor: "black",
+        buttonBackground: "#FF6276"
       },
-      boxShadow : {
-        panelShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px"
+      fontSize: {
+        textHeading: "1.2rem", 
+        textParagraph: "0.9rem", 
       }
     },
   },
   plugins: [],
 }
-
