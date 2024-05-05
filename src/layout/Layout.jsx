@@ -10,7 +10,7 @@ const Layout = () => {
         <main>
           <Routers/>
         </main>
-        <div className='mt-40'>
+        <div className='mt-[20px]'>
       <Footer/>
         </div>
     </>

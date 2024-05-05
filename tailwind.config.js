@@ -12,7 +12,7 @@ export default {
         purpleColor: "#9771ff",
         irisBlueColor: "#01b5cs",
         headingColor: "#181A1E",
-        textColor: "#4E545F",
+        textColor: "#FF6276",
       },
       boxShadow : {
         panelShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px"

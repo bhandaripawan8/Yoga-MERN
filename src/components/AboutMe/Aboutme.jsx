@@ -1,18 +1,18 @@
-// AboutMe.js
+
 import React from 'react';
 import { aboutMe } from '../../data';
-import './AboutMe.css'; // Import the CSS file
+import './AboutMe.css'; 
 
 const AboutMe = () => {
   const { ourStory, ourValues } = aboutMe;
 
   return (
-    <div className="about-me-container"> {/* Apply the container class */}
+    <div className="about-me-container"> 
       <h2>Our Story</h2>
       <p className="about-me-story">{ourStory}</p>
 
       <h2>Our Values</h2>
-      <ul className="about-me-values"> {/* Apply the values class */}
+      <ul className="about-me-values"> 
         {ourValues.map((value, index) => (
           <li key={index}>
             <h3>{value.topic}</h3>

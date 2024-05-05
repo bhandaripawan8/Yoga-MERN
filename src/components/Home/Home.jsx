@@ -4,7 +4,7 @@ import Contact from "../Contact/Contact";
 import Hero from "../Hero/Hero";
 import WhyChoose from "../whyChoose/WhyChoose";
 import Sessions from "../Sessions/Sessions";
-import WhatToExpect from "../WhatToExpect/WhatToExpect";
+import WhatToExpectData from "../WhatToExpect/WhatToExpectData";
 import Faq from "../FAQ/Faq";
 
 const Home = () => {
@@ -22,12 +22,8 @@ const Home = () => {
           <WhyChoose />
         </div>
         <div className="mt-40">
-          <WhatToExpect />
+          <WhatToExpectData/>
         </div>
-
-        {/* <div className="mt-40">
-            <Itinerary />
-          </div> */}
         <div className="mt-40">
           <Sessions />
         </div>

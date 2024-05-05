@@ -42,7 +42,6 @@ export const aboutMe= {
 
 
 // why choose Prayogi
-
 export const whyChoosePrayogi = [
     {
         header: 'Expert Instructors',
@@ -61,7 +60,6 @@ export const whyChoosePrayogi = [
 
 // yoga event
  export const yogaEvent = {
-    description: "Are you looking to deepen your yoga practice while connecting with nature? Look no further! At The Prayogi, we offer invigorating outdoor yoga sessions and transformative yoga retreats that combine the power of yoga with the beauty of the great outdoors.",
     outdoorYogaSessions: {
       description: "Step out of the studio and into nature with our exhilarating outdoor yoga sessions. Leave the confines of four walls behind and immerse yourself in the calming presence of the natural world. Our experienced instructors will guide you through energizing asanas, pranayama breathing exercises, and serene meditation practices, all while surrounded by the scenic beauty of ,,,,,,,,,,,,,,. Whether it's a lush park or a picturesque mountaintop, practicing yoga outdoors enhances your mind-body connection and allows you to experience a sense of true harmony."
     },
@@ -88,7 +86,6 @@ export const whyChoosePrayogi = [
   
 
 //   frequently asked questions
-
  export const yogaFAQs = {
     "1": {
       question: "What should I wear to a yoga class?",
@@ -189,4 +186,34 @@ export const whyChooseUs = {
     focus: "Strong focus on safety and well-being",
     joinUs: "Join us at The Prayogi and embark on a transformative journey through yoga and the great outdoors. Explore the beauty of nature while deepening your practice and nurturing your soul."
   };
+
+
+  // what to expect
+
+  export const whatToExpect = [
+    {
+        title: "What to Expect:",
+        items: [
+            "A rejuvenating retreat that combines physical activity with mindfulness practices",
+            "Experienced instructors guiding you through yoga and hiking sessions",
+            "Opportunities to connect with like-minded individuals and nature"
+        ]
+    },
+    {
+        title: "Yoga Benefits:",
+        items: [
+            "Improved flexibility and strength",
+            "Reduced stress and anxiety",
+            "Enhanced mind-body connection"
+        ]
+    },
+    {
+        title: "Hiking Highlights:",
+        items: [
+            "Breathtaking scenic viewpoints",
+            "Exploration of diverse ecosystems",
+            "Fresh air and natural beauty"
+        ]
+    }
+];
   

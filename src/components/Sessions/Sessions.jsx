@@ -1,15 +1,13 @@
 import React from 'react';
 import { yogaEvent } from '../../data'; 
+import AreYou from './AreYou';
+
 
 const Sessions = () => {
 
   return (
-    
     <div>
-    <p className='text-xl my-[10px] flex mx-auto text-center'>
-      {yogaEvent.description}
-    </p>
-
+      <AreYou/>
     <section>
       <p className='text-xl my-[10px] flex mx-auto text-center'>
         Outdoor Yoga Sessions

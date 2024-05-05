@@ -34,9 +34,9 @@ const HeroContent = () => {
             Request an Appointment
           </motion.button>
         </div>
-        {/* Client counter section */}
+       
         <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-[30px] lg:mt-5">
-          {/* Year of Experience */}
+ 
           <div>
             <motion.h2
               className="text-[35px] leading-[56px] lg:text-[35px] lg:leading-[54px] font-[700] text-headingColor"
@@ -50,7 +50,7 @@ const HeroContent = () => {
             <span className="w-[100px] h-2 bg-headingColor rounded-full block mt-[-12px]"></span>
             <motion.p className="text-lg">Year of Experience</motion.p>
           </div>
-          {/* Clients */}
+
           <div>
             <motion.h2
               className="text-[35px] leading-[56px] lg:text-[35px] lg:leading-[54px] font-[700] text-headingColor"
@@ -64,7 +64,7 @@ const HeroContent = () => {
             <span className="w-[100px] h-2 bg-headingColor rounded-full block mt-[-12px]"></span>
             <p className="text-lg">Clients</p>
           </div>
-          {/* Client Satisfaction */}
+
           <div>
             <motion.h2
               className="text-[35px] leading-[56px] lg:text-[35px] lg:leading-[54px] font-[700] text-headingColor"

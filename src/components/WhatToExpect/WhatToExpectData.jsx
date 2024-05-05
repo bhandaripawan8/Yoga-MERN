@@ -1,40 +1,32 @@
 import React from 'react';
-import WhatToExpect from './WhatToExpect'; 
+import { whatToExpect } from '../../data';
+import './WhatToExpectData.css'; 
 
-    const cardsData = [
-        {
-            title: "What to Expect:",
-            items: [
-                "A rejuvenating retreat that combines physical activity with mindfulness practices",
-                "Experienced instructors guiding you through yoga and hiking sessions",
-                "Opportunities to connect with like-minded individuals and nature"
-            ]
-        },
-        {
-            title: "Yoga Benefits:",
-            items: [
-                "Improved flexibility and strength",
-                "Reduced stress and anxiety",
-                "Enhanced mind-body connection"
-            ]
-        },
-        {
-            title: "Hiking Highlights:",
-            items: [
-                "Breathtaking scenic viewpoints",
-                "Exploration of diverse ecosystems",
-                "Fresh air and natural beauty"
-            ]
-        }
-    ];
+const ExpectationCard = ({ title, items }) => {
+  return (
+    <div className="expectation-card">
+      <h4>{title}</h4>
+      <ul>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
-    return (
-        <div className="flex flex-col items-center">
-            {cardsData.map((index, data) => (
-                <WhatToExpect key={index} title={data.title} items={data.items} />
-            ))}
-        </div>
-    );
+const WhatToExpectData = () => {
+  return (
+    <div className="expectation-container">
+      {whatToExpect.map((expectation, index) => (
+        <ExpectationCard
+          key={index}
+          title={expectation.title}
+          items={expectation.items}
+        />
+      ))}
+    </div>
+  );
+};
 
-
-export default App;
+export default WhatToExpectData;
