@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { whyChoosePrayogi } from '../../data'; 
+import './WhyChoose.css'
+
 const WhyChooseContent = () => {
   const controls = useAnimation();
   const ref = useRef();
@@ -23,24 +25,24 @@ const WhyChooseContent = () => {
 
   return (
     <div>
-      <section ref={ref}>
+      <section ref={ref} className=''>
         <motion.p
-          className='text-xl my-[10px] flex mx-auto text-center '
+          className='whyChooseHeader'
           initial={{ opacity: 0, y: 50 }}
           animate={controls}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.8 }}
         >
           Why choose Prayogi?
         </motion.p>
 
-        <ul className='py-[10px]' ref={ref}>
+        <ul className='py-[10px] whyChooseCardContainer gap-5' ref={ref}>
           {whyChoosePrayogi.map((choice, index) => (
             <motion.li
               key={index}
-              className='text-lg py-[5px]'
+              className='py-[5px] whyChooseCard '
               initial={{ opacity: 0, y: 20 }}
               animate={controls}
-              transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
+              transition={{ duration: 0.6, delay: 0.2 * (index + 1) }}
             >
               <p className='font-bold'>{choice.header}:</p> {choice.Description}
             </motion.li>

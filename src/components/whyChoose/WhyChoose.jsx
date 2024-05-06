@@ -1,14 +1,11 @@
 import WhyChooseContent from './WhyChooseContent'
-import WhyChooseLogo from './WhyChooseLogo'
+
 
 const WhyChoose = () => {
   return (
-    <div className='mt-[50px] grid grid-cols-4'>
-      <div className='col-span-3'>
+    <div className='mt-[50px]'>
+      <div className=''>
       <WhyChooseContent/>
-      </div>
-      <div className='col-span-1'>   
-      <WhyChooseLogo/>
       </div>
     </div>
   )

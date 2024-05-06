@@ -1,0 +1,33 @@
+
+.whyChooseHeader{
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whyChooseCardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    margin-top: 50px;
+}
+
+.whyChooseCard{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    padding: 40px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    transition: background-color 0.6s ease;
+}
+
+.whyChooseCard:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
