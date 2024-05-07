@@ -1,9 +1,10 @@
 import React from "react";
-import AboutMe from "../AboutMe/Aboutme";
+import AboutUs from "../AboutMe/AboutUs";
 import Contact from "../Contact/Contact";
 import Hero from "../Hero/Hero";
 import WhyChoose from "../whyChoose/WhyChoose";
 import Sessions from "../Sessions/Sessions";
+import OurValues from '../AboutMe/Values'
 import WhatToExpectData from "../WhatToExpect/WhatToExpectData";
 import Faq from "../FAQ/Faq";
 
@@ -12,8 +13,9 @@ const Home = () => {
     <>
       <Hero />
       <Sessions />
-      <AboutMe />
+      <AboutUs />
       <WhyChoose />
+      <OurValues/>
       <WhatToExpectData />
       <Faq />
       <Contact />

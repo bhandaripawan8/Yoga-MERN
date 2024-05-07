@@ -7,6 +7,7 @@ import Sessions from '../Pages/Sessions/Sessions'
 import SessionsDetails from '../Pages/Sessions/SessionsDetails'
 import {Routes, Route} from 'react-router-dom';
 import Tarevir from '../components/Sessions/Tarevir'
+import AboutMore from '../components/AboutMe/AboutMore'
 
 
 const Routers = () => {
@@ -19,6 +20,7 @@ const Routers = () => {
         <Route path='/sessions/' element={<Sessions/>}/>
         <Route path='/sessionsdetails' element={<SessionsDetails/>}/>
         <Route path='/tarevir' element= {<Tarevir/>}/>
+        <Route path='/about' element = {<AboutMore/>}/>
     </Routes>
   )
 }
