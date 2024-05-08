@@ -13,7 +13,7 @@ const Tarevir = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="bg-red-300">
+        <div className="bg-yellow-50">
           <div className="flex flex-col items-center">
             <div>
               <p className="text-textHeading text-buttonBackground text-2xl font-bold my-[10px] flex mx-auto text-center">

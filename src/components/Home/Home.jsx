@@ -5,9 +5,8 @@ import Hero from "../Hero/Hero";
 import WhyChoose from "../whyChoose/WhyChoose";
 import Sessions from "../Sessions/Sessions";
 import OurValues from '../AboutMe/Values'
-import WhatToExpectData from "../WhatToExpect/WhatToExpectData";
 import Faq from "../FAQ/Faq";
-
+import WhatToExpectData from '../WhatToExpect/WhatToExpectData'
 const Home = () => {
   return (
     <>
@@ -16,7 +15,7 @@ const Home = () => {
       <AboutUs />
       <WhyChoose />
       <OurValues/>
-      <WhatToExpectData />
+      <WhatToExpectData/>
       <Faq />
       <Contact />
     </>
