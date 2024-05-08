@@ -14,8 +14,8 @@ const Sessions = () => {
       </div>
       <div className="flex justify-center my-[20px]">
         <div className="h-auto items-center flex gap-2">
-          <div className=" flex-grow bg-red-100 flex md:flex-row h-auto items-center gap-5 p-5 md:p-0">
-            <div className="bg-red-300 flex flex-col justify-center items-center gap-3 md:p-0 w-full md:w-auto">
+          <div className=" flex-grow  flex md:flex-row h-auto items-center gap-5 p-5 md:p-0">
+            <div className=" flex flex-col justify-center items-center gap-3 md:p-0 w-full md:w-auto">
               <div className="w-[80%] border p-4 mb-4">
                 <img src={sessions1} alt="" className="w-10 h-10 mx-auto mb-2" />
                 <p className="text-lg font-bold text-center mb-2">
@@ -42,7 +42,7 @@ const Sessions = () => {
                 </p>
                 <div className="flex items-center justify-center mt-[15px]">
                   <Link to={"/tarevir"}>
-                    <button className="w-[100px] bg-buttonBackground text-black rounded-lg text-textParagraph p-[8px] hover:bg-black hover:text-white">
+                    <button className="w-[100px] bg-purple-600 text-white rounded-lg text-textParagraph p-[8px] hover:bg-black hover:text-white">
                       More Details
                     </button>
                   </Link>

@@ -11,7 +11,7 @@ const HeroContent = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          Let's collaborate to grow the <span className="text-teal-400">peace of mind</span>
+          Let's collaborate to grow the <span className="text-purple-600">peace of mind</span>
         </motion.h1>
         <motion.p
           className="heroHeader mt-[10px] text-lg"
@@ -25,7 +25,7 @@ const HeroContent = () => {
         </motion.p>
         <div className="hover:bg-grey-500">
           <motion.button
-            className=" bg-buttonBackground text-black rounded-md my-[20px] p-[10px] hover:bg-grey-200"
+            className=" bg-purple-600  text-white rounded-md my-[20px] p-[10px] hover:bg-grey-200"
             initial={{ x: "-70px" }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
