@@ -1,39 +1,88 @@
-import React from 'react'
+import React from "react";
+import contact1 from "../../assets/images/contact1.jpg";
 
 const Contact = () => {
   return (
-    <div>
-        <div>
-        <div className="max-w-sm mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold mb-6 text-center">Contact Me</h2>
-      <form>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="firstName">First Name</label>
-          <input className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="firstName" type="text" placeholder="First Name" />
+    <div className="bg-yellow-50">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-5xl mx-auto py-12 md:py-24 shadow-xl mt-[20px] px-10 bg-yellow-50">
+        <div className="flex flex-col justify-center items-center">
+          <img
+            alt="Yoga pose"
+            className="rounded-xl shadow-lg"
+            src={contact1}
+            style={{
+              aspectRatio: "500/500",
+              objectFit: "cover",
+              width: "100%",
+              maxWidth: "400px",
+            }}
+          />
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="lastName">Last Name</label>
-          <input className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="lastName" type="text" placeholder="Last Name" />
+        <div className="flex flex-col justify-center">
+          <div className="space-y-4">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-200">
+              Get in Touch
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 text-[15px]">
+              Have a question or want to work together? Fill out the form below
+              and I'll get back to you as soon as possible.
+            </p>
+          </div>
+          <form className="space-y-4 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <label
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                  htmlFor="name"
+                >
+                  Name
+                </label>
+                <input
+                  className="block w-full h-7 border-gray-300 shadow-sm focus:border-purple-600 focus:ring-purple-600 sm:text-sm dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300"
+                  id="name"
+                  placeholder="Enter your name"
+                  type="text"
+                />
+              </div>
+              <div className="space-y-2">
+                <label
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                  htmlFor="email"
+                >
+                  Email
+                </label>
+                <input
+                  className="block w-full h-7 bg-gray-500 rounded-lg bg-gray-800 shadow-sm focus:border-purple-600 focus:ring-purple-600 sm:text-sm dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300"
+                  id="email"
+                  placeholder="Enter your email"
+                  type="email"
+                />
+              </div>
+            </div>
+            <div className="space-y-2">
+              <label
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                htmlFor="message"
+              >
+                Message
+              </label>
+              <textarea
+                className="block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-600 focus:ring-purple-600 sm:text-sm dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 min-h-[130px]"
+                id="message"
+                placeholder="Enter your message"
+              />
+            </div>
+            <button
+              className="inline-flex items-center justify-center rounded-md border border-transparent bg-purple-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 dark:bg-purple-400 dark:hover:bg-purple-500 dark:focus:ring-purple-300"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">Email</label>
-          <input className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email" />
-        </div>
-        <div className="mb-6">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">Message</label>
-          <textarea className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your Message"></textarea>
-        </div>
-        <div className="flex items-center justify-center">
-          <button className="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out" type="submit">
-            Send
-          </button>
-        </div>
-      </form>
-    </div>    
-        </div>   
-
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

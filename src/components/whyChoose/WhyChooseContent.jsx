@@ -18,8 +18,8 @@ const WhyChooseContent = () => {
         </div>
         <div className="flex justify-center mt-10">
           {whyChoosePrayogi.map((item, index) => (
-            <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden mx-4 hover:-translate-y-2 hover:shadow-lg dark:bg-gray-950">
-              <div className="p-6">
+            <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden mx-4 hover:-translate-y-2 hover:shadow-lg   dark:bg-gray-950">
+              <div className="p-6 ">
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
                     <img
