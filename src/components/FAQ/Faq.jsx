@@ -1,24 +1,65 @@
-import React from 'react'
-import { yogaFAQs } from '../../data'
+// import React from "react";
+// import Collapsible from "./Collapsible";
+import { yogaFAQs } from "../../data";
+import React, { useState } from "react";
 
-const Faq = () => {
+const FAQ = () => {
+  const [openIdx, setOpenIdx] = useState(null);
+
+  const toggleFAQ = (index) => {
+    if (openIdx === index) {
+      setOpenIdx(null);
+    } else {
+      setOpenIdx(index);
+    }
+  };
+
   return (
-    <div>
-
-<div>
-      <h2>Yoga FAQs</h2>
-      <ul>
-        {Object.keys(yogaFAQs).map((key) => (
-          <li key={key}>
-            <h3>{yogaFAQs[key].question}</h3>
-            <p>{yogaFAQs[key].answer}</p>
-          </li>
+    <div className="flex items-center justify-center w-full">
+      <div className=" border rounded-lg px-4 py-6 shadow-md w-[63%] py-10">
+        <h2 className="text-2xl  font-bold mb-4 flex justify-center font-extrabold">Frequently Asked Questions</h2>
+        {yogaFAQs.map((faq, index) => (
+          <div
+            key={index}
+            className={`faq-item border-b py-2 last:border-b-0 ${
+              openIdx === index ? "bg-gray-100" : ""
+            }`}
+          >
+            <button
+              onClick={() => toggleFAQ(index)}
+              className="flex justify-between items-center w-full focus:outline-none"
+            >
+              <p className="text-base font-semibold mt-4"><li>{faq.question}</li></p>
+              <span className="transition duration-200 ease-in-out transform">
+                {openIdx === index ? "-" : "+"}
+              </span>
+            </button>
+            {openIdx === index && (
+              <p className="text-sm font-medium text-gray-800 mt-3 px-[15px] transition-all duration-300 ease-in-out">{faq.answer}</p>
+            )}
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
+  );
+};
+export default FAQ;
 
-    </div>
-  )
-}
+// const App = () => {
+//   return (
+//     <div className="flex items-center justify-center">
+//       <div>
+//         <h1>Yoga FAQs</h1>
+//         {yogaFAQs.map((faq, index) => (
+//           <Collapsible
+//             key={index}
+//             question={faq.question}
+//             answer={faq.answer}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
 
-export default Faq
+// export default App;

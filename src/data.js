@@ -86,44 +86,44 @@ export const whyChoosePrayogi = [
   
 
 //   frequently asked questions
- export const yogaFAQs = {
-    "1": {
+ export const yogaFAQs = [
+    {
       question: "What should I wear to a yoga class?",
       answer: "Wear comfortable, breathable clothing that allows you to move freely. Avoid clothing that is too tight or restrictive."
     },
-    "2": {
+    {
       question: "Do I need to bring my own yoga mat?",
       answer: "It's recommended to bring your own yoga mat for hygiene reasons. However, mats are usually available for rent or purchase at the studio."
     },
-    "3": {
+     {
       question: "I'm new to yoga. Which class should I start with?",
       answer: "Beginners are encouraged to start with a Hatha or Vinyasa class, as these styles are generally more accessible to new students. Look for classes labeled as 'beginner-friendly' or 'all levels.'"
     },
-    "4": {
+     {
       question: "How often should I practice yoga?",
       answer: "The frequency of your yoga practice depends on your goals and schedule. For general health and well-being, practicing 2-3 times per week is recommended. More frequent practice may be beneficial for those looking to deepen their practice or achieve specific goals."
     },
-    "5": {
+    {
       question: "What are the benefits of yoga?",
       answer: "Yoga offers a wide range of physical, mental, and emotional benefits. It can improve flexibility, strength, and balance, as well as reduce stress, anxiety, and depression."
     },
-    "6": {
+     {
       question: "Can I do yoga if I have an injury or medical condition?",
       answer: "It's important to consult with your healthcare provider before starting yoga if you have an injury or medical condition. Many yoga poses can be modified to accommodate different needs, but it's best to seek guidance from a qualified instructor."
     },
-    "7": {
+     {
       question: "Do I need to be flexible to do yoga?",
       answer: "No, you do not need to be flexible to do yoga. Yoga is a practice that helps improve flexibility, strength, and balance over time. Everyone's body is different, and yoga can be adapted to suit individual needs and abilities."
     },
-    "8": {
+     {
       question: "Can I eat before a yoga class?",
       answer: "It's generally recommended to avoid eating a large meal right before yoga class. A light snack or meal 1-2 hours before class is usually sufficient to provide energy without causing discomfort during practice."
     },
-    "9": {
+     {
       question: "How do I prepare for a yoga class?",
       answer: "Wear comfortable clothing, bring a yoga mat and water bottle, arrive early to settle in and inform the instructor of any injuries or conditions, and avoid eating a large meal right before class."
     }
-  };
+  ]
   
 
 //   blog section

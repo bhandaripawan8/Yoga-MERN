@@ -10,7 +10,8 @@ import WhatToExpectData from '../WhatToExpect/WhatToExpectData'
 const Home = () => {
   return (
     <>
-      <Hero />
+    <div className="">
+    <Hero />
       <Sessions />
       <AboutUs />
       <WhyChoose />
@@ -18,6 +19,8 @@ const Home = () => {
       <WhatToExpectData/>
       <Faq />
       <Contact />
+    </div>
+
     </>
   );
 };
