@@ -6,8 +6,8 @@ import Routers from "../Routes/Routers";
 const Layout = () => {
   return (
     <>
-    <div className="w-full flex flex-col items-center justify-center bg-gray-100">
     <Header />
+    <div className="w-full flex flex-col items-center justify-center ">
       <main>
         <Routers />
       </main>

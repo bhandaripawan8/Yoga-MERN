@@ -1,66 +1,16 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import "./Header.css";
-
-const navlinks = [
-  {
-    path: "/",
-    display: "Home",
-  },
-  {
-    path: "/sessions",
-    display: "Find your session",
-  },
-  {
-    path: "/services",
-    display: "Services",
-  },
-  {
-    path: "/contacts",
-    display: "Contact",
-  },
-];
+import React from 'react'
 
 const Header = () => {
   return (
-    <div className="w-full h-[50px] flex items-center justify-center  bg-white">
-      <header className="w-[80%]">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center ml-[20px]">
-            <Link to={"/"}>
-              <h2 className="text-black text-2xl">Logo</h2>
-            </Link>
-          </div>
-          <div>
-            <div className="container flex items-center justify-between ">
-              <nav className="navigation">
-                <ul className="menu flex items-center gap-[2.7rem]">
-                  {navlinks.map((link, index) => (
-                    <li key={index}>
-                      <NavLink
-                        to={link.path}
-                        activeClassName="text-primaryColor text-[16px] leading-7 font-[600]"
-                        className="text-textColor text-[14px] leading-7 font-[500] navTexts"
-                      >
-                        {link.display}
-                      </NavLink>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div className="flex items-center">
-            <Link to={"/login"}>
-              <button className="text-blacktext-black text-md h-8 w-25 flex items-center mr-[20px]">
-                Login/Register
-              </button>
-            </Link>
-          </div>
-        </div>
-      </header>
-    </div>
-  );
-};
+<header className="header flex justify-between items-center px-5 py-6 bg-gray-800 text-white">
+<img src="logo.svg" alt="Yoga Logo" className="h-8" />
+<nav className="flex space-x-10 px-5">
+  <a href="" className="text-base hover:underline">Explore Yoga</a>
+  <a href="" className="text-base hover:underline">About Us</a>
+  <a href="" className="text-base hover:underline">Sign Up</a>
+</nav>
+</header>
+  )
+}
 
-export default Header;
+export default Header

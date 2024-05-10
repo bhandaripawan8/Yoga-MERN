@@ -59,30 +59,30 @@ export const whyChoosePrayogi = [
 ]
 
 // yoga event
- export const yogaEvent = {
-    outdoorYogaSessions: {
+ export const yogaEvent = [
+  {
+    Title : "Outdoor Yoga Sessions",
       description: "Step out of the studio and into nature with our exhilarating outdoor yoga sessions. Leave the confines of four walls behind and immerse yourself in the calming presence of the natural world. Our experienced instructors will guide you through energizing asanas, pranayama breathing exercises, and serene meditation practices, all while surrounded by the scenic beauty of ,,,,,,,,,,,,,,. Whether it's a lush park or a picturesque mountaintop, practicing yoga outdoors enhances your mind-body connection and allows you to experience a sense of true harmony."
-    },
-    hikeAndYoga: {
+  },{
+    Title : "Hike And Yoga", 
       description: "Combine your love for hiking and yoga with our unique hike and yoga sessions. Experience the joy of connecting with the natural world as you embark on a guided hike that takes you to breathtaking scenic viewpoints. Once we reach our destination, immerse yourself in a rewarding yoga session amidst the sights and sounds of nature. This fusion of hiking and yoga offers a truly remarkable experience that invigorates both the body and the soul."
-    },
-    aboutEvent: {
+    }]
+
+
+    // about tarevir
+    export const aboutTarevir =
+ {
       title: "Prakriti sanga Yoga in Tarebhir",
       description: "Join us for an unforgettable experience that combines the serenity of yoga with the exhilaration of hiking in the breathtaking landscapes of Tarebhir. Our Prakriti sanga Yoga offers a unique opportunity to reconnect with yourself and nature, fostering a deeper sense of well-being and harmony.",
       date: "June 2024",
       location: "Tarebhir, Nepal",
-      eventHighlights: [
-        "Morning Yoga Sessions: Start your day with invigorating yoga sessions amidst the tranquility of nature. Led by experienced instructors, these sessions are designed to rejuvenate your body and mind.",
-        "Guided Hikes: Explore the scenic beauty of Tarebhir with our guided hikes. Traverse through lush forests, and picturesque trails, experiencing the wonders of nature up close.",
-        "Mindfulness Activities: Immerse yourself in mindfulness activities that promote relaxation and inner peace. Connect with nature through guided meditation and breathing exercises."
-      ],
-      whatToExpect: [
-        "A rejuvenating retreat that combines physical activity with mindfulness practices",
-        "Experienced instructors guiding you through yoga and hiking sessions",
-        "Opportunities to connect with like-minded individuals and nature"
-      ]
-    }
-  };
+      eventHighlights: "Morning Yoga Sessions: Start your day with invigorating yoga sessions amidst the tranquility of nature. Led by experienced instructors, these sessions are designed to rejuvenate your body and mind.",
+      GuidedHikes: "Explore the scenic beauty of Tarebhir with our guided hikes. Traverse through lush forests, and picturesque trails, experiencing the wonders of nature up close.",
+      MindfulnessActivities: "Immerse yourself in mindfulness activities that promote relaxation and inner peace. Connect with nature through guided meditation and breathing exercises.",
+      whatToExpect:
+        "A rejuvenating retreat that combines physical activity with mindfulness practices,Experienced instructors guiding you through yoga and hiking sessions.Opportunities to connect with like-minded individuals and nature"
+ }
+
   
 
 //   frequently asked questions
