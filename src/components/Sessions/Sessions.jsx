@@ -5,42 +5,53 @@ import sessionIcon2 from "../../assets/images/sessions2.png";
 
 const YogaComponent = () => {
   return (
-    <section className="yoga-container bg-gradient-to-r from-gray-100 to-gray-200">
-      <div className="container flex flex-col justify-center items-center px-4 py-16 mx-auto md:flex-row md:justify-between md:space-x-12 lg:max-w-7xl">
-        <div className="yoga-image w-full md:w-1/2">
+    <section class="yoga-container bg-gradient-to-r from-gray-100 to-gray-200">
+      <div class="container flex flex-col justify-center items-center px-4 py-16 my-10 mx-auto md:flex-row md:justify-between md:space-x-12 lg:max-w-7xl shadow-md">
+        <div class="yoga-image w-[40%] ">
           <img
             src={session1}
             alt="Person doing yoga pose"
-            className="rounded-lg shadow-md"
+            class="rounded-lg shadow-md"
           />
         </div>
-        <div className="h-[550px] p-4 w-full md:w-1/2 bg-white rounded-lg shadow-md">
-          <div className="">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4 mt-10">
+        <div class="h-[550px] p-4 w-full md:w-1/2 bg-white rounded-lg shadow-md ">
+          <div class=" p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 mt-10">
               Experience the transformative power of personalized yoga sessions.
             </h2>
-            <p>Our experienced instructors guide you through unique techniques to enhance your practice and achieve your goals.</p>
+            <p class="text-base text-gray-700">
+              Our experienced instructors guide you through unique techniques to
+              enhance your practice and achieve your goals.
+            </p>
           </div>
-          <div className="h-[60%] flex justify-around place-items-end">
-            <div>
-              <div className="h-[50px] w-[50px]">
-                <img src={sessionIcon1} alt="" />
+          <div class="grid grid-cols-2 gap-8 p-6">
+            <div class="flex flex-col justify-center items-center bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300">
+              <div class="w-20 h-20 rounded-full bg-purple-500 flex justify-center items-center">
+                <img src={sessionIcon1} alt="" class="w-10 h-10 text-white" />
               </div>
-              <h3 className="font-bold text-purple-600 leading-10">Outdoor Yoga Sessions</h3>
-              <p className="text-sm py-[10px]">
-                Step out of the studio and into nature with our exhilarating
-                outdoor yoga sessions.
-              </p>
+              <div class="mt-6 text-center">
+                <h3 class="text-xl font-bold text-gray-900 leading-6">
+                  Outdoor Yoga Sessions
+                </h3>
+                <p class="mt-2 text-base text-gray-700">
+                  Step out of the studio and into nature with our exhilarating
+                  outdoor yoga sessions.
+                </p>
+              </div>
             </div>
-            <div>
-              <div className="h-[50px] w-[50px]">
-                <img src={sessionIcon2} alt="" />
+            <div class="flex flex-col justify-center items-center bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300">
+              <div class="w-20 h-20 rounded-full bg-purple-600 flex justify-center items-center">
+                <img src={sessionIcon2} alt="" class="w-10 h-10 text-white" />
               </div>
-              <h3 className="font-bold text-purple-600 leading-10">Hike and Yoga</h3>
-              <p className="text-sm py-[10px]">
-                Combine your love for hiking and yoga with our unique hike and
-                yoga sessions.
-              </p>
+              <div class="mt-6 text-center">
+                <h3 class="text-xl font-bold text-gray-900 leading-6">
+                  Hike and Yoga
+                </h3>
+                <p class="mt-2 text-base text-gray-700">
+                  Combine your love for hiking and yoga with our unique hike and
+                  yoga sessions.
+                </p>
+              </div>
             </div>
           </div>
         </div>
