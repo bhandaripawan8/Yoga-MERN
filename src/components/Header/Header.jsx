@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-<header className="header flex justify-between items-center px-5 py-6 text-white">
+<header className="header flex justify-between items-center px-5 py-6 text-white bg-purple-500">
 <img src="logo.svg" alt="Yoga Logo" className="h-8" />
 <nav className="flex space-x-10 px-5">
   <a href="" className="text-black hover:underline">Contact</a>

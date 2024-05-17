@@ -6,7 +6,7 @@ import sessionIcon2 from "../../assets/images/sessions2.png";
 const YogaComponent = () => {
   return (
     <section class="yoga-container bg-gradient-to-r from-gray-100 to-gray-200">
-      <div class="container flex flex-col justify-center items-center px-4 py-16 my-10 mx-auto md:flex-row md:justify-between md:space-x-12 lg:max-w-7xl ">
+      <div class="flex flex-col justify-center items-center px-4 py-16 my-10 mx-auto md:flex-row md:justify-between md:space-x-12 lg:max-w-7xl ">
         <div class="yoga-image w-[45%] ">
           <img
             src={session1}

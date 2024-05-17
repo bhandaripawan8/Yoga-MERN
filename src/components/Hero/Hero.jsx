@@ -5,7 +5,7 @@ import hero1 from "../../assets/images/prakriti1.jpg";
 const YogaLanding = () => {
   return (
     <>
-      <main className="h-[90vh] bg-center bg-cover flex justify-center items-center gap-20">
+      <main className="h-[85vh] bg-center bg-cover flex justify-center items-center gap-20">
         <div className="flex flex-col justify-center items-center text-center max-w-xl mx-8">
           <h1 className="text-4xl font-bold text-black mb-4">
             Transform Your Body and Mind with Yoga
