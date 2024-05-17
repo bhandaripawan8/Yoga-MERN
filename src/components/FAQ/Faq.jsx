@@ -15,8 +15,8 @@ const FAQ = () => {
   };
 
   return (
-    <div className="flex items-center justify-center w-full">
-      <div className=" border rounded-lg px-4 py-6 shadow-md w-[63%] h-auto py-10">
+    <div className="flex items-center justify-center w-full shadow-sm my-10">
+      <div className=" border rounded-lg px-4 py-6 w-[63%] h-auto py-10">
         <h2 className="text-2xl  font-bold mb-4 flex justify-center font-extrabold">Frequently Asked Questions</h2>
         {yogaFAQs.map((faq, index) => (
           <div
