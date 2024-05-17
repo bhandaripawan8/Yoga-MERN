@@ -125,77 +125,80 @@ const AboutMe = () => {
   }
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-      <div className="text-center space-y-4">
-        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl ">
-          Our Values
-        </h2>
-      </div>
-      <div className="flex items-center justify-center">
-        <div className="container mt-[100px] grid grid-cols-1 gap-6 px-4 md:grid-cols-2 lg:grid-cols-3 md:px-6">
-          <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-6 shadow-sm transition-all hover:-translate-y-2 hover:shadow-lg dark:bg-gray-950">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FEF3C7] dark:bg-[#4B5563]">
-              <LaptopIcon className="h-6 w-6 text-[#D97706] dark:text-[#F59E0B]" />
+    <div className="w-full flex items-center justify-center shadow-sm">
+      <section className="w-[70%] py-12 md:py-24 lg:py-32">
+        <div className="text-center space-y-4">
+          <h2 className="text-3xl font-extrabold sm:text-4xl ">
+            Our Values
+          </h2>
+        </div>
+        <div className="flex items-center justify-center">
+          <div className="container mt-[100px] grid grid-cols-1 gap-6 px-4 md:grid-cols-2 lg:grid-cols-3 md:px-6">
+            <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-6 shadow-lg transition-all hover:-translate-y-2 hover:shadow-lg ">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FEF3C7] ">
+                <LaptopIcon className="h-6 w-6 text-[#D97706] dark:text-[#F59E0B]" />
+              </div>
+              <h3 className="text-lg font-semibold">Holistic Well-being</h3>
+              <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+                Emphasize the holistic benefits of yoga and adventure, focusing
+                on physical, mental, and spiritual well-being.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold">Holistic Well-being</h3>
-            <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-              Emphasize the holistic benefits of yoga and adventure, focusing on
-              physical, mental, and spiritual well-being.
-            </p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-6 shadow-sm transition-all hover:-translate-y-2 hover:shadow-lg dark:bg-gray-950">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#E0E7FF] dark:bg-[#4B5563]">
-              <ActivityIcon className="h-6 w-6 text-[#4F46E5] dark:text-[#818CF8]" />
+            <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-6 shadow-lg transition-all hover:-translate-y-2 hover:shadow-lg ">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#E0E7FF] ">
+                <ActivityIcon className="h-6 w-6 text-[#4F46E5] dark:text-[#818CF8]" />
+              </div>
+              <h3 className="text-lg font-semibold">Authenticity</h3>
+              <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+                Highlight your personal journey and commitment to yoga and
+                adventure, showcasing your genuine passion and expertise.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold">Authenticity</h3>
-            <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-              Highlight your personal journey and commitment to yoga and
-              adventure, showcasing your genuine passion and expertise.
-            </p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-6 shadow-sm transition-all hover:-translate-y-2 hover:shadow-lg dark:bg-gray-950">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#D1FAE5] dark:bg-[#4B5563]">
-              <MagnetIcon className="h-6 w-6 text-[#047857] dark:text-[#34D399]" />
+            <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-6 shadow-lg transition-all hover:-translate-y-2 hover:shadow-lg ">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#D1FAE5] ">
+                <MagnetIcon className="h-6 w-6 text-[#047857] dark:text-[#34D399]" />
+              </div>
+              <h3 className="text-lg font-semibold">Connection</h3>
+              <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+                Emphasize the importance of connecting with oneself, nature, and
+                others through yoga and adventure experiences.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold">Connection</h3>
-            <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-              Emphasize the importance of connecting with oneself, nature, and
-              others through yoga and adventure experiences.
-            </p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-6 shadow-sm transition-all hover:-translate-y-2 hover:shadow-lg dark:bg-gray-950">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FEE2E2] dark:bg-[#4B5563]">
-              <AirVentIcon className="h-6 w-6 text-[#B91C1C] dark:text-[#F87171]" />
+            <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-6 shadow-lg transition-all hover:-translate-y-2 hover:shadow-lg ">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FEE2E2] ">
+                <AirVentIcon className="h-6 w-6 text-[#B91C1C] dark:text-[#F87171]" />
+              </div>
+              <h3 className="text-lg font-semibold">Community</h3>
+              <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+                Build a community of like-minded individuals who share a passion
+                for yoga, adventure, and personal growth.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold">Community</h3>
-            <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-              Build a community of like-minded individuals who share a passion
-              for yoga, adventure, and personal growth.
-            </p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-6 shadow-sm transition-all hover:-translate-y-2 hover:shadow-lg dark:bg-gray-950">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#ECFDF5] dark:bg-[#4B5563]">
-              <CompassIcon className="h-6 w-6 text-[#065F46] dark:text-[#10B981]" />
+            <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-6 shadow-lg transition-all hover:-translate-y-2 hover:shadow-lg ">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#ECFDF5] ">
+                <CompassIcon className="h-6 w-6 text-[#065F46] dark:text-[#10B981]" />
+              </div>
+              <h3 className="text-lg font-semibold">Adventure</h3>
+              <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+                Promote a sense of adventure and exploration, encouraging people
+                to step out of their comfort zones and discover new experiences.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold">Adventure</h3>
-            <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-              Promote a sense of adventure and exploration, encouraging people
-              to step out of their comfort zones and discover new experiences.
-            </p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-6 shadow-sm transition-all hover:-translate-y-2 hover:shadow-lg dark:bg-gray-950">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F3F4F6] dark:bg-[#4B5563]">
-              <ScalingIcon className="h-6 w-6 text-[#6B7280] dark:text-[#9CA3AF]" />
+            <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-6 shadow-lg transition-all hover:-translate-y-2 hover:shadow-lg ">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F3F4F6] ">
+                <ScalingIcon className="h-6 w-6 text-[#6B7280] dark:text-[#9CA3AF]" />
+              </div>
+              <h3 className="text-lg font-semibold">Sustainability</h3>
+              <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+                Advocate for sustainable practices in yoga and adventure
+                tourism, promoting environmental conservation and responsible
+                travel.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold">Sustainability</h3>
-            <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-              Advocate for sustainable practices in yoga and adventure tourism,
-              promoting environmental conservation and responsible travel.
-            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 export default AboutMe;

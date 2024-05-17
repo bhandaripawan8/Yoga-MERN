@@ -9,18 +9,19 @@ const WhyChooseContent = () => {
 
   return (
     <>
-       <section className="bg-yellow-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="full flex items-center justify-center shadow-sm">
+    <section className="py-12 px-4 sm:px-6 lg:px-8 w-[70%]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Why Choose Prayogi?</h2>
-            <p className="text-lg text-gray-500">Discover the benefits of practicing yoga with Prayogi.</p>
+            <h2 className="text-3xl font-extrabold sm:text-4xl">Why Choose Prayogi?</h2>
+            <p className="text-lg text-black">Discover the benefits of practicing yoga with Prayogi.</p>
           </div>
         </div>
         <div className="flex justify-center mt-10">
           {whyChoosePrayogi.map((item, index) => (
-            <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden mx-4 hover:-translate-y-2 hover:shadow-lg   dark:bg-gray-950">
+            <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden mx-4 hover:-translate-y-2 hover:shadow-lg">
               <div className="p-6 ">
-                <div className="flex items-center">
+                <div className="flex flex-col items-center">
                   <div className="flex-shrink-0">
                     <img
                       alt="Yoga Mat"
@@ -44,6 +45,8 @@ const WhyChooseContent = () => {
           ))}
         </div>
       </section>
+    </div>
+
     </>
   );
 };

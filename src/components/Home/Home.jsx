@@ -16,7 +16,7 @@ const Home = () => {
       <AboutUs />
       <WhyChoose />
       <OurValues/>
-      <WhatToExpectData/>
+      {/* <WhatToExpectData/> */}
       <Faq />
       <Contact />
     </div>
