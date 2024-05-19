@@ -223,12 +223,12 @@ export const whyChooseUs = {
 import img1 from './assets/images/sangayoga.jpg'
 import img2 from './assets/images/contact1.jpg'
 import img3 from './assets/images/contact2.jpg'
-// import img4 from './assets/images/hero1.png'
-// import img5 from './assets/images/hero2.png'
-// import img6 from './assets/images/hero3.png'
+import img4 from './assets/images/hero1.png'
+import img5 from './assets/images/hero2.png'
+import img6 from './assets/images/hero3.png'
 import img7 from './assets/images/prakriti1.jpg'
 import img8 from './assets/images/prakriti2.jpg'
 import img9 from './assets/images/prakriti3.jpg'
 import img10 from './assets/images/sessions.png'
 
-export const GalleryImages = [img1,  img3, img7, img8, img9, img10]
+export const GalleryImages = [img1, img2, img4, img5, img3, img7, img8, img9, img10]
