@@ -1,10 +1,21 @@
 import React from "react";
-import hero1 from "../../assets/images/prakriti1.jpg";
+import background1 from "../../assets/images/background1.jpg";
 import { Link } from "react-router-dom";
+import hero1 from "../../assets/images/prakriti1.jpg";
 
 const Hero1 = () => {
   return (
-    <div className="bg-gray-100 flex justify-center">
+    <div
+      className="bg-gray-100 flex justify-center"
+      style={{
+        backgroundImage: `url(${background1})`,
+        width: "100%",
+        height: "100%",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}
+    >
       <section className="py-12 md:py-24 lg:py-32 xl:py-48 flex justify-center lg:max-w-[70%] ">
         <div className="container px-4 md:px-6 ">
           <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_600px]">

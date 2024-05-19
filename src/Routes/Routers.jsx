@@ -8,6 +8,7 @@ import SessionsDetails from '../Pages/Sessions/SessionsDetails'
 import {Routes, Route} from 'react-router-dom';
 import Tarevir from '../components/Sessions/Tarevir'
 import AboutMore from '../components/AboutMe/AboutMore'
+import Gallery from '../components/Gallery/Gallery'
 
 
 const Routers = () => {
@@ -21,6 +22,7 @@ const Routers = () => {
         <Route path='/sessionsdetails' element={<SessionsDetails/>}/>
         <Route path='/tarevir' element= {<Tarevir/>}/>
         <Route path='/about' element = {<AboutMore/>}/>
+        <Route path='/gallery' element = {<Gallery/>}/>
     </Routes>
   )
 }
