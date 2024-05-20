@@ -19,9 +19,12 @@ const Header = () => {
             <a href={'/gallery'} className="text-white hover:underline">
               Gallery
             </a>
+            <Link to= '/login'>
             <a href="" className="text-white hover:underline">
-              Sign Up
+              Login/Sign Up
             </a>
+            </Link>
+
           </nav>
         </header>
       </div>
