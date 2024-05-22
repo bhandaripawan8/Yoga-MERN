@@ -1,10 +1,13 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Login1 from '../assets/images/background2.jpg';
 import { Link } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
+
 const Signup = () => {
+  const [isRegistered, setIsRegistered] = useState(false);
+
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -34,7 +37,7 @@ const Signup = () => {
         const data = await response.json();
         if (response.ok) {
           console.log('Registration successful:', data);
-          // Redirect to login or show success message
+          setIsRegistered(true);
         } else {
           console.error('Registration failed:', data);
           // Handle error response

@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
 import generateToken from '../utils/generateToken.js';
+import bcrypt from 'bcryptjs';
 
 export const registerUser = async (req, res) => {
   try {
@@ -33,23 +34,40 @@ export const registerUser = async (req, res) => {
   }
 };
 
-export const authUser = async (req, res) => {
+
+const { JWTSECRETKEY } = process.env;
+
+// Controller to handle user login
+export const loginUser = async (req, res) => {
   const { email, password } = req.body;
 
   try {
+    // Find user by email
     const user = await User.findOne({ email });
 
-    if (user && (await user.matchPassword(password))) {
-      res.json({
+    // Check if user exists
+    if (!user) {
+      return res.status(401).json({ message: 'Invalid email or password' });
+    }
+
+    // Validate password
+    const isMatch = await bcrypt.compare(password, user.password);
+
+    if (!isMatch) {
+      return res.status(401).json({ message: 'Invalid email or password' });
+    }
+
+    // Send token and user details in response
+    res.status(200).json({
+      token: generateToken(user._id),
+      user: {
         _id: user._id,
         name: user.name,
-        email: user.email,
-        token: generateToken(user._id),
-      });
-    } else {
-      res.status(401).json({ message: 'Invalid email or password' });
-    }
+        email: user.email
+      }
+    });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error('Error logging in user:', error);
+    res.status(500).json({ message: 'Server error' });
   }
 };

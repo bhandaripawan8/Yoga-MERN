@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import Login1 from '../assets/images/background2.jpg';
 
 const Login = () => {
+
+
   const formik = useFormik({
     initialValues: {
       email: '',
@@ -18,8 +20,27 @@ const Login = () => {
         .min(8, 'Must be at least 8 characters')
         .required('Required'),
     }),
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: async (values) => {
+      try {
+        const response = await fetch('http://localhost:3000/api/auth/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(values),
+        });
+        const data = await response.json();
+        if (response.ok) {
+          console.log('Login successful:', data);
+          // Redirect to dashboard or any other page on successful login
+
+        } else {
+          console.error('Login failed:', data);
+          // Handle error response
+        }
+      } catch (error) {
+        console.error('Error logging in:', error);
+      }
     },
   });
 
