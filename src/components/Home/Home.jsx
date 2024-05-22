@@ -3,7 +3,6 @@ import AboutUs from "../AboutMe/AboutUs";
 import Contact from "../Contact/Contact";
 import Hero from '../Hero/Hero1'
 import WhyChoose from "../whyChoose/WhyChoose";
-import Sessions from "../Sessions/Sessions";
 import OurValues from '../AboutMe/Values'
 import Faq from "../FAQ/Faq";
 import WhatToExpectData from '../WhatToExpect/WhatToExpectData'
@@ -12,7 +11,6 @@ const Home = () => {
     <>
     <div className="">
     <Hero />
-      <Sessions />
       <AboutUs />
       <WhyChoose />
       <OurValues/>
