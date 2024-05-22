@@ -1,21 +1,15 @@
-const jwt = require('jsonwebtoken');
-const User = require('../models/User');
+import jwt from 'jsonwebtoken';
+import User from '../models/User.js';
+import generateToken from '../utils/generateToken.js';
 
-// Generate JWT
-const generateToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_SECRET, {
-    expiresIn: '30d',
-  });
-};
-
-exports.registerUser = async (req, res) => {
-  const { name, email, password } = req.body;
-
+export const registerUser = async (req, res) => {
   try {
+    const { name, email, password } = req.body;
+
     const userExists = await User.findOne({ email });
 
     if (userExists) {
-      return res.status(400).json({ message: 'User already exists' });
+      return res.status(400).json({ message: 'User already exists', success: false });
     }
 
     const user = await User.create({
@@ -24,22 +18,20 @@ exports.registerUser = async (req, res) => {
       password,
     });
 
-    if (user) {
-      res.status(201).json({
-        _id: user._id,
-        name: user.name,
-        email: user.email,
-        token: generateToken(user._id),
-      });
-    } else {
-      res.status(400).json({ message: 'Invalid user data' });
-    }
+    res.status(201).json({
+      _id: user._id,
+      name: user.name,
+      email: user.email,
+      token: generateToken(user._id),
+      success: true,
+    });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.log(error);
+    return res.status(500).json({ message: 'Error registering the user', success: false, error });
   }
 };
 
-exports.authUser = async (req, res) => {
+export const authUser = async (req, res) => {
   const { email, password } = req.body;
 
   try {
