@@ -5,8 +5,8 @@ import Login from '../Pages/Login'
 import Signup from '../Pages/Signup'
 import {Routes, Route} from 'react-router-dom';
 import Tarevir from '../components/Sessions/Tarevir'
-import AboutMore from '../components/AboutMe/AboutMore'
 import Gallery from '../components/Gallery/Gallery'
+import Aboutus from '../components/AboutMe/AboutUs'
 
 
 const Routers = () => {
@@ -17,7 +17,7 @@ const Routers = () => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/tarevir' element= {<Tarevir/>}/>
-        <Route path='/about' element = {<AboutMore/>}/>
+        <Route path='/aboutus' element = {<Aboutus/>}/>
         <Route path='/gallery' element = {<Gallery/>}/>
     </Routes>
   )

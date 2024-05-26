@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Values from './Values'
 import sangaYoga from "../../assets/images/sangayoga.jpg";
 
 const AboutUs = () => {
@@ -39,6 +40,9 @@ const AboutUs = () => {
             />
           </div>
         </div>
+      </section>
+      <section>
+        <Values/>
       </section>
     </>
   );

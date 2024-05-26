@@ -1,14 +1,13 @@
 import React from "react";
-import background1 from "../../assets/images/background1.jpg";
 import { Link } from "react-router-dom";
-import hero1 from "../../assets/images/prakriti1.jpg";
+import sangayoga from "../../assets/images/sangayoga.jpg";
 
 const Hero1 = () => {
   return (
     <div
       className="bg-gray-100 flex justify-center"
       style={{
-        backgroundImage: `url(${background1})`,
+        backgroundImage: `url(${''})`,
         width: "100%",
         height: "100%",
         backgroundSize: "cover",
@@ -23,7 +22,7 @@ const Hero1 = () => {
               alt="Yoga Hero"
               className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
               height="600"
-              src={hero1}
+              src={sangayoga}
               width="800"
             />
             <div className="flex flex-col justify-center space-y-4">
@@ -39,7 +38,7 @@ const Hero1 = () => {
                 </p>
               </div>
               <div className="py-[12px] flex flex-col gap-3 min-[400px]:flex-row">
-                <Link
+                <Link to="/login"
                   className="bg-purple-500 inline-flex h-10 items-center justify-center rounded-md px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-black focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
                   href=""
                 >
