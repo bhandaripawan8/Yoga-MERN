@@ -45,7 +45,7 @@ const Hero1 = () => {
                   Get Started
                 </Link>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link
+                  <Link to={'/sessions'}
                     className="bg-white text-black inline-flex h-10 items-center justify-center rounded-md px-8 text-sm font-medium shadow transition-colors hover:bg-black hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
                     href=""
                   >

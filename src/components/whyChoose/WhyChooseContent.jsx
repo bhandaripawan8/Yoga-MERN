@@ -19,10 +19,10 @@ const WhyChooseContent = () => {
         </div>
         <div className="flex justify-center mt-10">
           {whyChoosePrayogi.map((item, index) => (
-            <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden mx-4 hover:-translate-y-2 hover:shadow-lg">
+            <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden mx-4 transition-transform transition-shadow duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
               <div className="p-6 ">
                 <div className="flex flex-col items-center">
-                  <div className="flex-shrink-0">
+                  <div className="flex-shrink-0 w-20 h-20 rounded-full bg-gray-200 mb-5  flex justify-center items-center">
                     <img
                       alt="Yoga Mat"
                       className="h-12 w-12"

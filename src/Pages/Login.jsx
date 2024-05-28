@@ -1,11 +1,14 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Login1 from '../assets/images/hero1.png'
 import { Link } from 'react-router-dom';
-import Login1 from '../assets/images/background2.jpg';
+
+//toast.configure();
 
 const Login = () => {
-
 
   const formik = useFormik({
     initialValues: {
@@ -32,18 +35,18 @@ const Login = () => {
         const data = await response.json();
         if (response.ok) {
           console.log('Login successful:', data);
-          // Redirect to dashboard or any other page on successful login
-
+          toast.success('Login successful....');
         } else {
           console.error('Login failed:', data);
-          // Handle error response
+          toast.error('Login failed....')
+
         }
       } catch (error) {
         console.error('Error logging in:', error);
+        toast.error('Error logging in!')
       }
     },
   });
-
   return (
     <div className="h-[90vh] flex items-center justify-center gap-20 px-4 md:px-8 lg:px-20">
       <div className="flex-shrink-0 h-auto w-auto">
@@ -123,6 +126,7 @@ const Login = () => {
           >
             Register
           </Link>
+          <ToastContainer/>
         </div>
       </div>
     </div>

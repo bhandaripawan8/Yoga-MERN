@@ -7,6 +7,7 @@ import {Routes, Route} from 'react-router-dom';
 import Tarevir from '../components/Sessions/Tarevir'
 import Gallery from '../components/Gallery/Gallery'
 import Aboutus from '../components/AboutMe/AboutUs'
+import Sessions from '../components/Sessions/Sessions'
 
 
 const Routers = () => {
@@ -19,6 +20,8 @@ const Routers = () => {
         <Route path='/tarevir' element= {<Tarevir/>}/>
         <Route path='/aboutus' element = {<Aboutus/>}/>
         <Route path='/gallery' element = {<Gallery/>}/>
+        <Route path='/sessions' element = {<Sessions/>}/>
+        
     </Routes>
   )
 }

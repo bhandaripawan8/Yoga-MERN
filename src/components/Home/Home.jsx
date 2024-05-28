@@ -3,11 +3,13 @@ import Contact from "../Contact/Contact";
 import Hero from '../Hero/Hero1'
 import WhyChoose from "../whyChoose/WhyChoose";
 import Faq from "../FAQ/Faq";
+import Sessions from '../Sessions/Sessions'
 const Home = () => {
   return (
     <>
     <div className="">
     <Hero />
+    <Sessions/>
       <WhyChoose />
       {/* <WhatToExpect/> */}
       <Faq />
