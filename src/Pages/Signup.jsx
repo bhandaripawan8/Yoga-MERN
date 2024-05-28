@@ -3,6 +3,7 @@ import Login1 from '../assets/images/background2.jpg';
 import { Link } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { toast, ToastContainer } from 'react-toastify';
 
 
 const Signup = () => {
@@ -38,12 +39,14 @@ const Signup = () => {
         if (response.ok) {
           console.log('Registration successful:', data);
           setIsRegistered(true);
+          toast.success(data.message);
         } else {
           console.error('Registration failed:', data);
-          // Handle error response
+          toast.error(data.message)
         }
       } catch (error) {
         console.error('Error registering the user:', error);
+        toast.error(data.message)
       }
     },
   });
@@ -141,6 +144,7 @@ const Signup = () => {
           >
             Login
           </Link>
+          <ToastContainer/>
         </div>
       </div>
     </div>

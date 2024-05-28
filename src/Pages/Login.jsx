@@ -35,15 +35,15 @@ const Login = () => {
         const data = await response.json();
         if (response.ok) {
           console.log('Login successful:', data);
-          toast.success('Login successful....');
+          toast.success(data.message);
         } else {
           console.error('Login failed:', data);
-          toast.error('Login failed....')
+          toast.error(data.message)
 
         }
       } catch (error) {
         console.error('Error logging in:', error);
-        toast.error('Error logging in!')
+        toast.error(data.message)
       }
     },
   });
