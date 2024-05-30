@@ -1,5 +1,5 @@
 import React from 'react'
-import session1 from "../../assets/images/sessions.png";
+import session1 from "../../assets/images/photoshoot5.jpg";
 
 const SessionImage = () => {
   return (

@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Login1 from '../assets/images/hero1.png'
+import Login1 from '../assets/images/photoshoot7.jpg'
 import { Link } from 'react-router-dom';
 
 //toast.configure();

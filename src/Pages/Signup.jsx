@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import Login1 from '../assets/images/background2.jpg';
+import Login1 from '../assets/images/photoshoot7.jpg';
 import { Link } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
