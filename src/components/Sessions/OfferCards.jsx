@@ -1,6 +1,7 @@
 import React from "react";
 import sessionIcon1 from "../../assets/images/sessions1.png";
 import sessionIcon2 from "../../assets/images/sessions2.png";
+import { Link } from "react-router-dom";
 
 const OfferCards = () => {
   return (
@@ -39,9 +40,12 @@ const OfferCards = () => {
                 Combine your love for hiking and yoga with our unique hike and
                 yoga sessions.
               </p>
+              <Link to='/booking'>
               <button class="py-2 px-5 my-2 bg-purple-600 text-white font-semibold rounded-md shadow-md hover:bg-black transition duration-500">
                 More Details
               </button>
+              </Link>
+
             </div>
           </div>
         </div>

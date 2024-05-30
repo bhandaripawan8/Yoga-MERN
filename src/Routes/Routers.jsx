@@ -8,6 +8,7 @@ import Tarevir from '../components/Sessions/Tarevir'
 import Gallery from '../components/Gallery/Gallery'
 import Aboutus from '../components/AboutMe/AboutUs'
 import Sessions from '../components/Sessions/Sessions'
+import Booking from '../components/BookingPage/Booking'
 
 
 const Routers = () => {
@@ -21,7 +22,7 @@ const Routers = () => {
         <Route path='/aboutus' element = {<Aboutus/>}/>
         <Route path='/gallery' element = {<Gallery/>}/>
         <Route path='/sessions' element = {<Sessions/>}/>
-        
+        <Route path='/booking' element = {<Booking/>}/>
     </Routes>
   )
 }
