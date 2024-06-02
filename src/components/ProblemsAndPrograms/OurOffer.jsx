@@ -4,22 +4,22 @@ import ourOfferImage from "../../assets/images/photoshoot3.jpg";
 const OurOffer = () => {
   return (
     <>
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="flex flex-col md:flex-row bg-zinc-100 dark:bg-zinc-800 p-6 max-w-7xl">
-          <div className="w-full md:w-[400px] h-auto">
+      <section className="flex items-center justify-center min-h-screen dark:bg-gray-900">
+        <div className="flex flex-col items-center justify-around md:flex-row  p-6 max-w-7xl shadow-md rounded-lg">
+          <div className="w-full md:w-[400px] h-auto mb-6 md:mb-0 md:mr-6">
             <img
               src={ourOfferImage}
               alt="Yoga in nature"
-              className="w-full object-cover overflow-hidden"
+              className="w-full h-full object-cover rounded-lg shadow-md"
             />
           </div>
-          <div className="w-full md:w-1/2 p-6">
+          <div className="w-full md:w-1/2 p-6 dark:bg-gray-800 rounded-lg shadow-inner">
             <h2 className="text-2xl font-bold mb-4 text-zinc-900 dark:text-zinc-100">
               What Program Includes
             </h2>
-            <div className="space-y-4">
-              <div className="flex flex-col md:flex-row items-start justify-between space-y-4 md:space-y-0">
-                <div>
+            <div className="space-y-8">
+              <div className="flex flex-col md:flex-row md:space-x-8">
+                <div className="md:w-1/2">
                   <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
                     Transfer
                   </h3>
@@ -27,7 +27,7 @@ const OurOffer = () => {
                     Transfer from Warsaw train station and back in a minibus
                   </p>
                 </div>
-                <div>
+                <div className="md:w-1/2">
                   <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
                     Meditation
                   </h3>
@@ -36,8 +36,8 @@ const OurOffer = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row items-start justify-between border-t border-zinc-300 dark:border-zinc-700 pt-4 space-y-4 md:space-y-0">
-                <div>
+              <div className="flex flex-col md:flex-row md:space-x-8 border-t border-zinc-300 dark:border-zinc-700 pt-4">
+                <div className="md:w-1/2">
                   <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
                     Accommodation
                   </h3>
@@ -46,7 +46,7 @@ const OurOffer = () => {
                     shared rooms or private double rooms.
                   </p>
                 </div>
-                <div>
+                <div className="md:w-1/2">
                   <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
                     Yoga sessions
                   </h3>
@@ -56,8 +56,8 @@ const OurOffer = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row items-start border-t border-zinc-300 dark:border-zinc-700 pt-4 space-y-4 md:space-y-0">
-                <div>
+              <div className="flex flex-col md:flex-row md:space-x-8 border-t border-zinc-300 dark:border-zinc-700 pt-4">
+                <div className="md:w-1/2">
                   <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
                     Eat
                   </h3>
@@ -66,7 +66,7 @@ const OurOffer = () => {
                     restaurants
                   </p>
                 </div>
-                <div>
+                <div className="md:w-1/2">
                   <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
                     Spa facilities
                   </h3>
@@ -76,8 +76,8 @@ const OurOffer = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row items-start border-t border-zinc-300 dark:border-zinc-700 pt-4 space-y-4 md:space-y-0">
-                <div>
+              <div className="flex flex-col md:flex-row md:space-x-8 border-t border-zinc-300 dark:border-zinc-700 pt-4">
+                <div className="md:w-1/2">
                   <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
                     Hotel facilities
                   </h3>
@@ -85,7 +85,7 @@ const OurOffer = () => {
                     WiFi, ATM, Bike Hire and local shops/restaurants nearby
                   </p>
                 </div>
-                <div>
+                <div className="md:w-1/2">
                   <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
                     Freetime
                   </h3>
@@ -97,7 +97,7 @@ const OurOffer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
