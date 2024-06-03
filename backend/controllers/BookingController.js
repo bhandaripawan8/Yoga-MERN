@@ -2,14 +2,16 @@ import Booking from '../models/Booking.js';
 
 // Function to create a booking
 export const createBooking = async (req, res) => {
-  const { booking_date, num_people, total_cost, customer_name, phone_number } = req.body;
+  const { booking_date, num_people, total_cost, customer_name, phone_number, file_upload,  customer_message } = req.body;
 
   const newBooking = new Booking({
     booking_date,
     num_people,
     total_cost,
     customer_name,
-    phone_number
+    phone_number,
+    file_upload,
+    customer_message
   });
 
   try {
