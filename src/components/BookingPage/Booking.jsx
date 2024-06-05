@@ -4,11 +4,8 @@ import BookingForm from './BookingForm'
 const Booking = () => {
   return (
     <>
-    <div>
-
-    </div>
     <BookingForm/>
-                   </>
+</>
   )
 }
 
