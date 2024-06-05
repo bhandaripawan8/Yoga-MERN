@@ -21,6 +21,14 @@ const bookingSchema = new Schema({
   phone_number: {
     type: String,
     required: true
+  },
+  file_upload: {
+    type: String,
+    required: true 
+  },
+  customer_message: {
+    type: String,
+    required: false 
   }
 });
 
