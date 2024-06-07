@@ -53,7 +53,7 @@ const BookingForm = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/booking', data, {
+      const response = await axios.post('http://localhost:3000/api/booking', data, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
