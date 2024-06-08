@@ -1,22 +1,41 @@
-import Booking from '../models/Booking.js';
+import Booking from "../models/Booking.js";
 
 // Function to create a booking
-export const createBooking = async (req, res) => {
-  const { booking_date, num_people, total_cost, customer_name, phone_number, file_upload,  customer_message } = req.body;
-
-  const newBooking = new Booking({
+const createBooking = async (req, res) => {
+  const {
+    email,
     booking_date,
     num_people,
     total_cost,
     customer_name,
     phone_number,
     file_upload,
-    customer_message
-  });
+    customer_message,
+  } = req.body;
 
   try {
+    // Check if there's already a booking for the same date and email
+    const existingBooking = await Booking.findOne({ email, booking_date });
+    if (existingBooking) {
+      return res
+        .status(400)
+        .json({ message: "A booking already exists for this date and email." });
+    }
+
+    // Create a new booking
+    const newBooking = new Booking({
+      email,
+      booking_date,
+      num_people,
+      total_cost,
+      customer_name,
+      phone_number,
+      file_upload,
+      customer_message,
+    });
+
     const savedBooking = await newBooking.save();
-    res.status(201).json({message: 'success',savedBooking});
+    res.status(201).json({ message: "success", savedBooking });
   } catch (error) {
     res.status(400).json({ message: error.message });
   }
