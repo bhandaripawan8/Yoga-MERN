@@ -42,11 +42,16 @@ const createBooking = async (req, res) => {
 };
 
 // Function to get all bookings
-export const getBookings = async (req, res) => {
-  try {
-    const bookings = await Booking.find();
-    res.status(200).json(bookings);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-};
+export const getAllBooking =async(req, res) => {
+    const {email} = req.body;
+
+    try{
+        if(!email){
+            return res.status(400).json({message: "An email is required to get all the booking details"})
+        }
+        const bookings = await Booking.find({customer_email: email})
+        res.status(200).json({bookings})
+    }catch(error){
+        res.status(500).json({message: error.message})
+    }
+}
